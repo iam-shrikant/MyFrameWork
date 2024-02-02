@@ -3,6 +3,9 @@
 */
 
 package com.myframework.Interfaces;
+
+import org.openqa.selenium.WebElement;
+
 public interface WebInterface {
     // initiate browser to launch website provided in URL
     void launchWebsite(String url);
@@ -16,4 +19,10 @@ public interface WebInterface {
     void pageLoadTimeout(int seconds);
 
     void maximizeScreen();
+
+    String pageTitle();
+
+    Boolean isElementVisible(WebElement e);
+
+    void clickOn(WebElement e);
 }

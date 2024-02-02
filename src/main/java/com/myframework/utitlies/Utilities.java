@@ -6,6 +6,7 @@ package com.myframework.utitlies;
 
 import com.myframework.Interfaces.WebInterface;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 import java.time.Duration;
 
@@ -27,6 +28,7 @@ public class Utilities implements WebInterface {
 
     @Override
     public void implicitilyWait(int seconds) {
+        System.out.println("printing driver: "+this.driver);
         this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(seconds));
     }
 
@@ -38,5 +40,20 @@ public class Utilities implements WebInterface {
     @Override
     public void maximizeScreen(){
         this.driver.manage().window().fullscreen();
+    }
+
+    @Override
+    public String pageTitle(){
+        return driver.getTitle();
+    }
+
+    @Override
+    public Boolean isElementVisible(WebElement e){
+       return e.isDisplayed();
+    }
+
+    @Override
+    public void clickOn(WebElement e){
+        e.click();
     }
 }
