@@ -5,8 +5,11 @@ Use    : This is a utility class that contain common methods used accross the fr
 package com.myframework.utitlies;
 
 import com.myframework.Interfaces.WebInterface;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
@@ -48,12 +51,27 @@ public class Utilities implements WebInterface {
     }
 
     @Override
-    public Boolean isElementVisible(WebElement e){
+    public boolean isElementVisible(WebElement e){
        return e.isDisplayed();
     }
 
     @Override
     public void clickOn(WebElement e){
         e.click();
+    }
+
+    @Override
+    public String getText(WebElement e){ return e.getText();}
+
+    @Override
+    public boolean isElementClickable(WebElement e, int WAIT_TIME_20_SECOND){
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIME_20_SECOND));
+            wait.until(ExpectedConditions.elementToBeClickable(e));
+            return true;
+        }
+        catch(TimeoutException exception) {
+            return false;
+        }
     }
 }

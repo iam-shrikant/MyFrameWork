@@ -20,6 +20,9 @@ public class BaseClass {
     public Properties prop = new Properties();
     public static WebDriver driver;
     public static Utilities util;
+    public final int WAIT_TIME_10_SECOND = 10;
+    public final int WAIT_TIME_20_SECOND = 20;
+
     public void setupDriver(){
         try {
             prop.load(new FileInputStream(System.getProperty("user.dir")+"\\Configuration\\config.properties"));
@@ -45,8 +48,8 @@ public class BaseClass {
 
     public void launchWebsite(){
         util = new Utilities(this.driver);
-        util.implicitilyWait(10);
-        util.pageLoadTimeout(20);
+        util.implicitilyWait(WAIT_TIME_10_SECOND);
+        util.pageLoadTimeout(WAIT_TIME_20_SECOND);
         util.launchWebsite(prop.getProperty("url"));
         util.maximizeScreen();
     }

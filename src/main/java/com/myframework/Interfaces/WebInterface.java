@@ -22,7 +22,11 @@ public interface WebInterface {
 
     String pageTitle();
 
-    Boolean isElementVisible(WebElement e);
+    boolean isElementVisible(WebElement e);
 
     void clickOn(WebElement e);
+
+    String getText(WebElement e);
+
+    boolean isElementClickable(WebElement e,int waitTimeInSecond);
 }

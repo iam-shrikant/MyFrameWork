@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-05T16:43:19 IST" name="Default Suite" finished-at="2024-02-05T16:43:25 IST" duration-ms="6831">
+    <groups>
+    </groups>
+    <test started-at="2024-02-05T16:43:19 IST" name="MyFrameWork" finished-at="2024-02-05T16:43:25 IST" duration-ms="6831">
+      <class name="com.myframework.testcases.homepage.VerifyHomeScreen">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@45752059]" started-at="2024-02-05T16:43:19 IST" name="beforeTest" finished-at="2024-02-05T16:43:25 IST" duration-ms="6407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="verifyHomePageTitle()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@45752059]" started-at="2024-02-05T16:43:25 IST" name="verifyHomePageTitle" finished-at="2024-02-05T16:43:25 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePageTitle -->
+        <test-method signature="verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.homepage.VerifyHomeScreen@45752059]" started-at="2024-02-05T16:43:25 IST" name="verifySignInBtnIsVisible" finished-at="2024-02-05T16:43:25 IST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignInBtnIsVisible -->
+        <test-method signature="verifyMainMenuOptions()[pri:2, instance:com.myframework.testcases.homepage.VerifyHomeScreen@45752059]" started-at="2024-02-05T16:43:25 IST" name="verifyMainMenuOptions" finished-at="2024-02-05T16:43:25 IST" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMainMenuOptions -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@45752059]" started-at="2024-02-05T16:43:25 IST" name="afterTest" finished-at="2024-02-05T16:43:25 IST" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.myframework.testcases.homepage.VerifyHomeScreen -->
+    </test> <!-- MyFrameWork -->
+  </suite> <!-- Default Suite -->
+</testng-results>

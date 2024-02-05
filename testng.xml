@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Home Page UI Test">
+        <classes>
+            <class name="com.myframework.testcases.homepage.VerifyHomeScreen">
+                <!--<methods>
+                    <include name="verifyHomePageTitle"/>
+                    <include name="verifySignInBtnIsVisible"/>
+                </methods>-->
+            </class>
+        </classes>
+    </test>
+</suite>
