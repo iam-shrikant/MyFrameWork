@@ -61,4 +61,8 @@ public class BaseClass {
             System.out.println("util object is null");
         }
     }
+
+    public String getPageTitle(){
+        return driver.getTitle();
+    }
 }

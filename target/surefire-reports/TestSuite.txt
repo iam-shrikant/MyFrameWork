@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 4, Time elapsed: 23.078 s <<< FAILURE! - in TestSuite
-beforeTest(com.myframework.testcases.homepage.VerifyHomeScreen)  Time elapsed: 22.827 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: 
-timeout: Timed out receiving message from renderer: -0.000
-  (Session info: chrome=121.0.6167.140)
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dc8373d2b4733d34cf8ee14705632b3e, get {url=http://www.automationpractice.pl/index.php}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.140, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\Shrikant\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58762}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58762/devtoo..., se:cdpVersion: 121.0.6167.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: dc8373d2b4733d34cf8ee14705632b3e
-	at com.myframework.testcases.homepage.VerifyHomeScreen.beforeTest(VerifyHomeScreen.java:22)
-
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.309 s - in TestSuite

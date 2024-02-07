@@ -1,2 +1,5 @@
+com\myframework\testcases\dataproviders\loginDataProviders.class
 com\myframework\testcases\homepage\TestClass.class
+com\myframework\testcases\signin_singup\VerifyUserSingIn.class
+com\myframework\testcases\account\VerifyMyAccountPage.class
 com\myframework\testcases\homepage\VerifyHomeScreen.class

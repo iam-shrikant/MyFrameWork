@@ -16,8 +16,8 @@ public class VerifyHomeScreen extends BaseClass {
     public static final String HOME_PAGE_TITLE = "My Shop";
     public static final List<String> HOME_PAGE_MENU = new ArrayList<String>(Arrays.asList("WOMEN","DRESSES","T-SHIRTS","BLOG"));
 
-    @BeforeTest
-    public void beforeTest(){
+    @BeforeClass
+    public void beforeClass(){
         setupDriver();
         launchWebsite();
         homePage = new HomePage();
@@ -39,8 +39,8 @@ public class VerifyHomeScreen extends BaseClass {
        Assert.assertTrue(homePage.verifyMainMenuOptions(HOME_PAGE_MENU));
     }
 
-    @AfterTest
-    public void afterTest(){
+    @AfterClass
+    public void afterClass(){
         doEndTest();
     }
 }

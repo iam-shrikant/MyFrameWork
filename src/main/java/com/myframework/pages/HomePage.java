@@ -29,7 +29,6 @@ public class HomePage extends BaseClass {
     @FindBy(xpath = "//ul[contains(@class,'sf-menu')]/li/a")
     List<WebElement> pageMenu;
 
-
     public HomePage(){
         PageFactory.initElements(getDriver(), this);
     }
@@ -39,11 +38,12 @@ public class HomePage extends BaseClass {
     }
 
     public Boolean isSignInBtnDisplayed(){
-        return util.isElementVisible(signInBtn);
+        return util.isElementDisplayed(signInBtn);
     }
 
-    public void clickOnSignInbtn(){
+    public SignInSIgnup clickOnSignInbtn(){
         util.clickOn(signInBtn);
+        return new SignInSIgnup();
     }
 
     public List<String> getMenuOnHomePage(){

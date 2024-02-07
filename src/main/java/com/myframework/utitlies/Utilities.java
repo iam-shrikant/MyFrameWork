@@ -31,7 +31,7 @@ public class Utilities implements WebInterface {
 
     @Override
     public void implicitilyWait(int seconds) {
-        System.out.println("printing driver: "+this.driver);
+        //System.out.println("printing driver: "+this.driver);
         this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(seconds));
     }
 
@@ -42,7 +42,7 @@ public class Utilities implements WebInterface {
 
     @Override
     public void maximizeScreen(){
-        this.driver.manage().window().fullscreen();
+        this.driver.manage().window().maximize();
     }
 
     @Override
@@ -51,8 +51,8 @@ public class Utilities implements WebInterface {
     }
 
     @Override
-    public boolean isElementVisible(WebElement e){
-       return e.isDisplayed();
+    public boolean isElementDisplayed(WebElement e){
+        return e.isDisplayed();
     }
 
     @Override
@@ -68,9 +68,28 @@ public class Utilities implements WebInterface {
         try {
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIME_20_SECOND));
             wait.until(ExpectedConditions.elementToBeClickable(e));
+            System.out.println("shrikant No Error -- ");
             return true;
         }
         catch(TimeoutException exception) {
+            System.out.println("shrikant error -- "+exception.getMessage());
+            return false;
+        }
+    }
+
+    @Override
+    public void sendKeys(WebElement element, String text){
+        element.clear();
+        element.sendKeys(text);
+    }
+
+    @Override
+    public boolean isElementVisible(WebElement element,int WAIT_TIME_20_SECOND){
+        try {
+            WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(WAIT_TIME_20_SECOND));
+            wait.until(ExpectedConditions.visibilityOf(element));
+            return true;
+        }catch (Exception e){
             return false;
         }
     }
