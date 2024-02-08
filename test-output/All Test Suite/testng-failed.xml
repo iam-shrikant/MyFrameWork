@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Home Page UI Test(failed)">
+    <classes>
+      <class name="com.myframework.testcases.homepage.VerifyHomeScreen">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="verifyHomePageTitle"/>
+          <include name="verifyMainMenuOptions"/>
+          <include name="verifySignInBtnIsVisible"/>
+        </methods>
+      </class> <!-- com.myframework.testcases.homepage.VerifyHomeScreen -->
+    </classes>
+  </test> <!-- Home Page UI Test(failed) -->
+  <test thread-count="2" parallel="tests" name="SignIn-Test(failed)">
+    <classes>
+      <class name="com.myframework.testcases.signin_singup.VerifyUserSingIn">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="verifySignInBtnIsClickable"/>
+          <include name="verifySignInBtnIsVisible"/>
+          <include name="beforeMethod"/>
+          <include name="afterClass"/>
+          <include name="verifyInvalidUserLogin" invocation-numbers="0 1"/>
+          <include name="verifyUserTapOnSignInBtn"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.myframework.testcases.signin_singup.VerifyUserSingIn -->
+    </classes>
+  </test> <!-- SignIn-Test(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
