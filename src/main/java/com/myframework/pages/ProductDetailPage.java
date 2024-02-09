@@ -2,6 +2,7 @@ package com.myframework.pages;
 
 import com.myframework.base.BaseClass;
 import com.myframework.utitlies.Util;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -50,11 +51,18 @@ public class ProductDetailPage extends BaseClass implements Pages {
         Util.selectOptionByText(sortBy,sortByText);
         return true;
     }
-    /*
+
     public void getAllProductList(){
+        List<Integer> prodPrice = new ArrayList<>();
         for (WebElement product: productList) {
-            product.findElement()
+
+            //System.out.println(product.getText());
+            //String price = product.findElement(By.xpath("./div/div[2]/h5/a")).getText();
+            String price = product.findElement(By.xpath("./div/div[2]/div[@class='content_price']/span[@class='price product-price']")).getText().replace("$","");
+            prodPrice.add(Integer.parseInt(price));
+
         }
+        System.out.println(prodPrice);
     }
-     */
+
 }

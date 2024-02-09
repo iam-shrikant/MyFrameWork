@@ -55,6 +55,12 @@ public class verifySortByOnProduct extends BaseClass {
     public void scrollPageTillSortByOption(){
         productDetailPage.scrollPageTillSortByOption();
     }
+
+    @Test(priority = 5)
+    public void verifyProductOrder(){
+        productDetailPage.getAllProductList();
+    }
+
     /*
     @AfterClass
     public void afterClass(){
