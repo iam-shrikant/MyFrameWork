@@ -51,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-All_Test_Suite" class="navigator-link ">
-                    <span>C:\Users\Shrikant\IdeaProjects\MyFrameWork\testng.xml</span>
+                    <span>C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-All_Test_Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,12 +129,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="com.myframework.testcases.signin_singup.VerifyUserSingIn" class="method navigator-link" hash-for-method="verifySignInBtnIsVisible">verifySignInBtnIsVisible</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="com.myframework.testcases.homepage.VerifyHomeScreen" class="method navigator-link" hash-for-method="verifySignInBtnIsVisible">verifySignInBtnIsVisible</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="com.myframework.testcases.homepage.VerifyHomeScreen" class="method navigator-link" hash-for-method="verifySignInBtnIsVisible">verifySignInBtnIsVisible</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="com.myframework.testcases.signin_singup.VerifyUserSingIn" class="method navigator-link" hash-for-method="verifySignInBtnIsVisible">verifySignInBtnIsVisible</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -154,35 +154,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
-          <div class="suite-All_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.myframework.testcases.homepage.VerifyHomeScreen</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyHomePageTitle">
-                  </a> <!-- verifyHomePageTitle -->
-                  <span class="method-name">verifyHomePageTitle</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyMainMenuOptions">
-                  </a> <!-- verifyMainMenuOptions -->
-                  <span class="method-name">verifyMainMenuOptions</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySignInBtnIsVisible">
-                  </a> <!-- verifySignInBtnIsVisible -->
-                  <span class="method-name">verifySignInBtnIsVisible</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-All_Test_Suite-class-passed -->
           <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -228,22 +199,55 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.myframework.testcases.homepage.VerifyHomeScreen</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePageTitle">
+                  </a> <!-- verifyHomePageTitle -->
+                  <span class="method-name">verifyHomePageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMainMenuOptions">
+                  </a> <!-- verifyMainMenuOptions -->
+                  <span class="method-name">verifyMainMenuOptions</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySignInBtnIsVisible">
+                  </a> <!-- verifySignInBtnIsVisible -->
+                  <span class="method-name">verifySignInBtnIsVisible</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-All_Test_Suite-class-passed -->
         </div> <!-- panel All_Test_Suite -->
         <div panel-name="test-xml-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Shrikant\IdeaProjects\MyFrameWork\testng.xml</span>
+            <span class="header-content">C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Home Page UI Test&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Home Page UI Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.myframework.testcases.homepage.VerifyHomeScreen&quot;/&gt;
-      &lt;class name=&quot;com.myframework.testcases.signin_singup.VerifyUserSingIn&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Home Page UI Test --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;SignIn-Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.myframework.testcases.signin_singup.VerifyUserSingIn&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SignIn-Test --&gt;
 &lt;/suite&gt; &lt;!-- All Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -255,7 +259,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Home Page UI Test (2 classes)</span>
+                <span class="test-name">Home Page UI Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SignIn-Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -285,40 +292,40 @@ data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyInvalidUserLogin')
 data.setCell(0, 2, 'com.myframework.testcases.signin_singup.VerifyUserSingIn')
-data.setCell(0, 3, 1306);
+data.setCell(0, 3, 1241);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyUserTapOnSignInBtn')
+data.setCell(1, 1, 'verifyInvalidUserLogin')
 data.setCell(1, 2, 'com.myframework.testcases.signin_singup.VerifyUserSingIn')
-data.setCell(1, 3, 1209);
+data.setCell(1, 3, 984);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyInvalidUserLogin')
+data.setCell(2, 1, 'verifyUserTapOnSignInBtn')
 data.setCell(2, 2, 'com.myframework.testcases.signin_singup.VerifyUserSingIn')
-data.setCell(2, 3, 1016);
+data.setCell(2, 3, 856);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyMainMenuOptions')
-data.setCell(3, 2, 'com.myframework.testcases.homepage.VerifyHomeScreen')
-data.setCell(3, 3, 96);
+data.setCell(3, 1, 'verifySignInBtnIsClickable')
+data.setCell(3, 2, 'com.myframework.testcases.signin_singup.VerifyUserSingIn')
+data.setCell(3, 3, 174);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifySignInBtnIsClickable')
-data.setCell(4, 2, 'com.myframework.testcases.signin_singup.VerifyUserSingIn')
-data.setCell(4, 3, 76);
+data.setCell(4, 1, 'verifyMainMenuOptions')
+data.setCell(4, 2, 'com.myframework.testcases.homepage.VerifyHomeScreen')
+data.setCell(4, 3, 151);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'verifySignInBtnIsVisible')
 data.setCell(5, 2, 'com.myframework.testcases.homepage.VerifyHomeScreen')
-data.setCell(5, 3, 72);
+data.setCell(5, 3, 133);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verifySignInBtnIsVisible')
 data.setCell(6, 2, 'com.myframework.testcases.signin_singup.VerifyUserSingIn')
-data.setCell(6, 3, 51);
+data.setCell(6, 3, 117);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'verifyHomePageTitle')
 data.setCell(7, 2, 'com.myframework.testcases.homepage.VerifyHomeScreen')
-data.setCell(7, 3, 19);
+data.setCell(7, 3, 35);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -356,52 +363,64 @@ return data;
                 <span class="method-name">beforeClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">verifyHomePageTitle</span>
-                <span class="method-start">7217 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifySignInBtnIsVisible</span>
-                <span class="method-start">7241 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyMainMenuOptions</span>
-                <span class="method-start">7314 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">7411 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.myframework.testcases.signin_singup.VerifyUserSingIn</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">7757 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifySignInBtnIsVisible</span>
-                <span class="method-start">14425 ms</span>
+                <span class="method-start">10869 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifySignInBtnIsClickable</span>
-                <span class="method-start">14476 ms</span>
+                <span class="method-start">10992 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.myframework.testcases.homepage.VerifyHomeScreen</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyHomePageTitle</span>
+                <span class="method-start">11001 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifySignInBtnIsVisible</span>
+                <span class="method-start">11037 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.myframework.testcases.signin_singup.VerifyUserSingIn</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyUserTapOnSignInBtn</span>
-                <span class="method-start">14554 ms</span>
+                <span class="method-start">11167 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.myframework.testcases.homepage.VerifyHomeScreen</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">verifyInvalidUserLogin(test@testqa.com, Testing@12345)</span>
-                <span class="method-start">15776 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyInvalidUserLogin(test124@testqa.com, Testing@1222345)</span>
-                <span class="method-start">16792 ms</span>
+                <span class="method-name">verifyMainMenuOptions</span>
+                <span class="method-start">11171 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">18099 ms</span>
+                <span class="method-start">11322 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.myframework.testcases.signin_singup.VerifyUserSingIn</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidUserLogin(test@testqa.com, Testing@12345)</span>
+                <span class="method-start">12035 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidUserLogin(test124@testqa.com, Testing@1222345)</span>
+                <span class="method-start">13277 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">14262 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -4,6 +4,7 @@
 
 package com.myframework.base;
 
+import com.myframework.utitlies.Util;
 import com.myframework.utitlies.Utilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import jdk.javadoc.doclet.Reporter;
@@ -21,7 +22,7 @@ public class BaseClass {
     public static  Properties prop = new Properties();
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
-    public static Utilities util;
+    //public static Utilities util;
     public final int WAIT_TIME_10_SECOND = 10;
     public final int WAIT_TIME_20_SECOND = 20;
 
@@ -54,23 +55,16 @@ public class BaseClass {
     }
 
     public void launchWebsite(){
-        util = new Utilities();
-        util.implicitilyWait(WAIT_TIME_10_SECOND);
-        util.pageLoadTimeout(WAIT_TIME_20_SECOND);
-        util.launchWebsite(prop.getProperty("url"));
-        util.maximizeScreen();
+       // util = new Utilities();
+        Util.implicitilyWait(WAIT_TIME_10_SECOND);
+        Util.pageLoadTimeout(WAIT_TIME_20_SECOND);
+        Util.launchWebsite(prop.getProperty("url"));
+        Util.maximizeScreen();
     }
 
     public void doEndTest(){
-        if(util != null){
-            util.exitTest();
-            driver.remove();
-        }else{
-            System.out.println("util object is null");
-        }
+        Util.exitTest();
+        driver.remove();
     }
 
-    public String getPageTitle(){
-        return getDriver().getTitle();
-    }
 }

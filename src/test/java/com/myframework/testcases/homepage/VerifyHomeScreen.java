@@ -18,19 +18,10 @@ public class VerifyHomeScreen extends BaseClass {
 
     @BeforeClass
     public void beforeClass(){
-        System.out.println("VerifyHomeScreen beforeClass Thread NO : "+Thread.currentThread().getId());
+        //System.out.println("VerifyHomeScreen beforeClass Thread NO : "+Thread.currentThread().getId());
         setupDriver();
         launchWebsite();
         homePage = new HomePage();
-    }
-    @BeforeMethod
-    public void beforeMethod(){
-        System.out.println("VerifyHomeScreen Thread NO : "+Thread.currentThread().getId());
-    }
-
-    @AfterMethod
-    public void afterMethod(){
-        System.out.println("VerifyHomeScreen Thread NO : "+Thread.currentThread().getId());
     }
 
     @Test(priority = 0)
@@ -51,7 +42,7 @@ public class VerifyHomeScreen extends BaseClass {
 
     @AfterClass
     public void afterClass(){
-        System.out.println("Thread NO : "+Thread.currentThread().getId());
+        //System.out.println("Thread NO : "+Thread.currentThread().getId());
         doEndTest();
     }
 }

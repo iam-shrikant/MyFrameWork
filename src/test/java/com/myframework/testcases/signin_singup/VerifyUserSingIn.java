@@ -22,20 +22,12 @@ public class VerifyUserSingIn extends BaseClass {
 
     @BeforeClass()
     public void beforeClass(){
-        System.out.println("VerifyUserSingIn beforeClass- beforeClass Thread NO : "+Thread.currentThread().getId());
+        //System.out.println("VerifyUserSingIn beforeClass- beforeClass Thread NO : "+Thread.currentThread().getId());
         setupDriver();
         launchWebsite();
         homePage = new HomePage();
     }
-    @BeforeMethod
-    public void beforeMethod(){
-        System.out.println("VerifyUserSingIn Thread NO : "+Thread.currentThread().getId());
-    }
 
-    @AfterMethod
-    public void afterMethod(){
-        System.out.println("VerifyUserSingIn Thread NO : "+Thread.currentThread().getId());
-    }
 
     @Test(priority = 1)
     public void verifySignInBtnIsVisible(){
@@ -54,7 +46,6 @@ public class VerifyUserSingIn extends BaseClass {
 
     @Test(priority = 4, enabled = true, dataProvider = "invalidLoginData", dataProviderClass = com.myframework.testcases.dataproviders.loginDataProviders.class)
     public void verifyInvalidUserLogin(String emailId, String password){
-
         SoftAssert softAssert = new SoftAssert();
         signInSignUpPage.enterEmailAddress(emailId);
         signInSignUpPage.enterPassword(password);
@@ -74,7 +65,7 @@ public class VerifyUserSingIn extends BaseClass {
     }
     @AfterClass
     public void afterClass(){
-        System.out.println("Thread NO : "+Thread.currentThread().getId());
+        //System.out.println("Thread NO : "+Thread.currentThread().getId());
         doEndTest();
     }
 }

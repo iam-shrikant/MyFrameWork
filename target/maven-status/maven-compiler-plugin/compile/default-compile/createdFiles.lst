@@ -1,6 +1,7 @@
 com\myframework\pages\AccountPage.class
 com\myframework\Interfaces\WebInterface.class
+com\myframework\base\BaseClass.class
+com\myframework\utitlies\Util.class
 com\myframework\pages\HomePage.class
 com\myframework\utitlies\Utilities.class
-com\myframework\base\BaseClass.class
 com\myframework\pages\SignInSIgnup.class

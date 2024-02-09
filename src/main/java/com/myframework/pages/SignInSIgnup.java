@@ -1,11 +1,12 @@
 package com.myframework.pages;
 
 import com.myframework.base.BaseClass;
+import com.myframework.utitlies.Util;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class SignInSIgnup extends BaseClass {
+public class SignInSIgnup extends BaseClass  implements Pages{
     @FindBy(id = "email")
     WebElement email;
 
@@ -23,23 +24,28 @@ public class SignInSIgnup extends BaseClass {
     }
 
     public void enterEmailAddress(String emailAddress){
-        util.sendKeys(email,emailAddress);
+        Util.sendKeys(email,emailAddress);
     }
 
     public void enterPassword(String password){
-        util.sendKeys(passwd,password);
+        Util.sendKeys(passwd,password);
     }
 
     public AccountPage clickOnSignInbtn(){
-        util.clickOn(SubmitLogin);
+        Util.clickOn(SubmitLogin);
         return new AccountPage();
     }
 
     public boolean isErrorDisplayed(){
-        return  util.isElementVisible(errorText,WAIT_TIME_10_SECOND);
+        return  Util.isElementVisible(errorText,WAIT_TIME_10_SECOND);
     }
 
     public String readError(){
-        return util.getText(errorText);
+        return Util.getText(errorText);
+    }
+
+    @Override
+    public String getPageTitle() {
+        return Util.pageTitle();
     }
 }
