@@ -7,6 +7,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class SignInSIgnup extends BaseClass  implements Pages{
+
+    public static final String expectedPageTitle = "Login - My Shop";
+
     @FindBy(id = "email")
     WebElement email;
 

@@ -12,6 +12,7 @@ import org.openqa.selenium.WebDriver;
 //import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 
 import java.io.FileInputStream;
@@ -20,7 +21,7 @@ import java.util.Properties;
 
 public class BaseClass {
     public static  Properties prop = new Properties();
-    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    private static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
 
     //public static Utilities util;
     public final int WAIT_TIME_10_SECOND = 10;
@@ -28,21 +29,25 @@ public class BaseClass {
 
     public static void setupDriver(){
         try {
+            Log.info("BaseClass - setupDriver() initiated");
             prop.load(new FileInputStream(System.getProperty("user.dir")+"\\Configuration\\config.properties"));
             if(prop.getProperty("browser").equalsIgnoreCase("Chrome")){
-                System.out.println("setting up chrome driver");
+                //System.out.println("");
+                Log.info("setting up chrome driver");
                 //WebDriverManager.chromedriver().setup();
                 driver.set(new ChromeDriver());
                 //driver = new ChromeDriver();
 
                 //driver = WebDriverManager.chromedriver().create();
             }else if(prop.getProperty("browser") == "Firefox"){
+                Log.info("setting up firefox driver");
                 WebDriverManager.firefoxdriver().setup();
                 //driver = new FirefoxDriver();
                 driver.set(new FirefoxDriver());
             }
         } catch (IOException e) {
             e.printStackTrace();
+            Log.info("BaseClass - setupDriver(): Got Exception -"+e.getMessage());
         }
     }
 

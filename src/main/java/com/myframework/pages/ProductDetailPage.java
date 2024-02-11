@@ -7,10 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class ProductDetailPage extends BaseClass implements Pages {
     public HashMap<String, WebElement> menuHashMap = new HashMap<String, WebElement>();
@@ -52,17 +49,48 @@ public class ProductDetailPage extends BaseClass implements Pages {
         return true;
     }
 
-    public void getAllProductList(){
-        List<Integer> prodPrice = new ArrayList<>();
+    public int[] getProductPriceData(){
+        int[] productPriceData = new int[productList.size()];
+        int i = 0;
         for (WebElement product: productList) {
-
-            //System.out.println(product.getText());
-            //String price = product.findElement(By.xpath("./div/div[2]/h5/a")).getText();
-            String price = product.findElement(By.xpath("./div/div[2]/div[@class='content_price']/span[@class='price product-price']")).getText().replace("$","");
-            prodPrice.add(Integer.parseInt(price));
+            try {
+                productPriceData[i] = Integer.parseInt(product.findElement(By.xpath("./div/div[2]/div[@class='content_price']/span[@class='price product-price']")).getText().replace("$",""));
+                i++;
+            }catch (NumberFormatException e){
+                System.out.println(e.getMessage());
+            }
 
         }
-        System.out.println(prodPrice);
+        return productPriceData;
+    }
+
+    public boolean isProductSortedByLowPriceFirst(){
+        int[] productData = getProductPriceData();
+        boolean ascending = true;
+        for (int j = 1; j < productData.length && ascending; j++) {
+            ascending = ascending && productData[j] >= productData[j-1];
+        }
+        return ascending;
+    }
+
+    public boolean isProductSortedByHighestPriceFirst(){
+        int[] productData = getProductPriceData();
+        boolean descending = true;
+        for (int j = 1; j < productData.length && descending; j++) {
+            descending = descending && productData[j] <= productData[j-1];
+        }
+        return descending;
+    }
+
+    public boolean isProductSortBy(String sortByText){
+        //int[] productData = new int[productList.size()];
+        if(sortByText.equals("Price: Lowest first")){
+            return isProductSortedByLowPriceFirst();
+        }else if(sortByText.equals("Price: Highest first")){
+            return isProductSortedByHighestPriceFirst();
+        }else{
+            return false;
+        }
     }
 
 }

@@ -20,6 +20,7 @@ public class TestClass {
 
     public static void main(String[] args) {
         //WebDriverManager.chromedriver().setup();
+        /*
         WebDriver driver = new ChromeDriver();
         driver.get("http://www.automationpractice.pl/index.php");
         //driver.get(" https://www.flipkart.com/");
@@ -33,6 +34,13 @@ public class TestClass {
 
         System.out.println("End of testing");
         //driver.quit();
-
+        */
+        int[] productData = {4,6,9,8,10};
+        boolean ascending = true, descending = true;
+        for (int j = 1; j < productData.length && (ascending || descending); j++) {
+            ascending = ascending && productData[j] >= productData[j-1];
+            descending = descending && productData[j] <= productData[j-1];
+        }
+        System.out.println(ascending+" "+descending);
     }
 }

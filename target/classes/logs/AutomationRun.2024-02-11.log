@@ -1,0 +1,2 @@
+2024-02-11 22:28:46,601 INFO c.m.b.Log [main] BaseClass - setupDriver() initiated
+2024-02-11 22:28:46,606 INFO c.m.b.Log [main] setting up chrome driver

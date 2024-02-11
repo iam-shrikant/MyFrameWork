@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn" name="Automation_Test_Log">
+    <Properties>
+        <Property name="log-path">./src/main/resources/logs/</Property>
+    </Properties>
+    <Appenders>
+
+        <Console name="LogToConsole" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <!--<File name="LogToFile" fileName="D:/temp/logs/app.log">
+            <PatternLayout>
+                <Pattern>%d{YYY-mm-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</Pattern>
+            </PatternLayout>
+        </File>
+        <File name="LogOnlyError" fileName="D:/temp/logs/app.log">
+            <PatternLayout>
+                <Pattern>%d{YYY-mm-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</Pattern>
+            </PatternLayout>
+        </File>
+        -->
+
+        <!-- <RollingFile name="DebuggerLogger" fileName="D:/temp/logs/xyz.log" filePattern="${log-path}/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">-->
+    <RollingFile name="DebuggerLogger" fileName="${log-path}AutomationRun.${date:yyyy-MM-dd}.log" filePattern="${log-path}/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
+       <PatternLayout>
+           <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
+       </PatternLayout>
+       <Policies>
+           <TimeBasedTriggeringPolicy />
+           <SizeBasedTriggeringPolicy size="10 MB" />
+       </Policies>
+   </RollingFile>
+
+</Appenders>
+<!--
+<Loggers>
+   <Logger name="shrikant_log1" level="TRACE" additivity="false">
+       <AppenderRef ref="LogToFile"/>
+       <AppenderRef ref="LogToConsole"/>
+   </Logger>
+   <Logger name="shrikant_log2" level="TRACE" additivity="false">
+       <AppenderRef ref="LogToConsole"/>
+   </Logger>
+   <Root level="TRACE">
+       <AppenderRef ref="LogToFile"/>
+       <AppenderRef ref="LogToConsole"/>
+   </Root>
+</Loggers>
+-->
+    <Loggers>
+        <Root level="info" additivity="false">
+            <AppenderRef ref="LogToConsole"/>
+            <AppenderRef ref="DebuggerLogger"/>
+        </Root>
+    </Loggers>
+</Configuration>

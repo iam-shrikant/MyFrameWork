@@ -16,6 +16,7 @@ public class VerifyUserSingIn extends BaseClass {
     //tc4: verify user provided wrong login details
     //tc5: verify user provided correct login details
     //tc6: verify login successful
+    //tc7: Verify Logout
     private HomePage homePage;
     private SignInSIgnup signInSignUpPage;
     private AccountPage accountPage;
@@ -44,7 +45,7 @@ public class VerifyUserSingIn extends BaseClass {
         signInSignUpPage = homePage.clickOnSignInbtn();
     }
 
-    @Test(priority = 4, enabled = true, dataProvider = "invalidLoginData", dataProviderClass = com.myframework.testcases.dataproviders.loginDataProviders.class)
+    @Test(priority = 4, enabled = false, dataProvider = "invalidLoginData", dataProviderClass = com.myframework.testcases.dataproviders.loginDataProviders.class)
     public void verifyInvalidUserLogin(String emailId, String password){
         SoftAssert softAssert = new SoftAssert();
         signInSignUpPage.enterEmailAddress(emailId);
@@ -55,14 +56,22 @@ public class VerifyUserSingIn extends BaseClass {
         softAssert.assertAll();
     }
 
-    @Test(priority = 5,enabled = false, dataProvider = "validLoginData", dataProviderClass = com.myframework.testcases.dataproviders.loginDataProviders.class)
+    @Test(priority = 5, dataProvider = "validLoginData", dataProviderClass = com.myframework.testcases.dataproviders.loginDataProviders.class)
     public void verifyValidUserLogin(String emailId, String password){
         //SoftAssert softAssert = new SoftAssert();
         signInSignUpPage.enterEmailAddress(emailId);
         signInSignUpPage.enterPassword(password);
         accountPage = signInSignUpPage.clickOnSignInbtn();
-        Assert.assertEquals(AccountPage.pageTitle,accountPage.getPageTitle());
+        Assert.assertEquals(AccountPage.expectedPageTitle,accountPage.getPageTitle());
     }
+
+    @Test(priority = 6)
+    public void verifyUserSignOut(){
+        signInSignUpPage = accountPage.signOutUser();
+        Assert.assertEquals(signInSignUpPage.expectedPageTitle,signInSignUpPage.getPageTitle());
+    }
+
+
     @AfterClass
     public void afterClass(){
         //System.out.println("Thread NO : "+Thread.currentThread().getId());

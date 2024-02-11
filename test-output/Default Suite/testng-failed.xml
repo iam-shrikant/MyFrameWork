@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="MyFrameWork(failed)">
+    <classes>
+      <class name="com.myframework.testcases.signin_singup.VerifyUserSingIn">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="verifyUserSignOut"/>
+        </methods>
+      </class> <!-- com.myframework.testcases.signin_singup.VerifyUserSingIn -->
+    </classes>
+  </test> <!-- MyFrameWork(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

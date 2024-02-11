@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="3" parallel="tests" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="3" parallel="tests" name="Product-sort-by-test(failed)">
-    <classes>
-      <class name="com.myframework.testcases.product.verifySortByOnProduct">
-        <methods>
-          <include name="verifyPageBreadCrumb"/>
-          <include name="afterClass"/>
-          <include name="hoverOnMenuAndSelectMenu"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- com.myframework.testcases.product.verifySortByOnProduct -->
-    </classes>
-  </test> <!-- Product-sort-by-test(failed) -->
-  <test thread-count="3" parallel="tests" name="Home Page UI Test(failed)">
+<suite parallel="tests" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Home Page UI Test(failed)">
     <classes>
       <class name="com.myframework.testcases.homepage.VerifyHomeScreen">
         <methods>

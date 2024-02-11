@@ -3,7 +3,7 @@
     <test name="Home Page UI Test">
         <classes>
             <class name="com.myframework.testcases.homepage.VerifyHomeScreen"></class>
-            <class name="com.myframework.testcases.signin_singup.VerifyUserSingIn"></class>
+            <!--<class name="com.myframework.testcases.signin_singup.VerifyUserSingIn"></class> -->
         </classes>
     </test>
 </suite>

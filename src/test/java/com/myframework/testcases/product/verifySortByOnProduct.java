@@ -25,7 +25,7 @@ public class verifySortByOnProduct extends BaseClass {
     private HomePage homePage;
     private ProductDetailPage productDetailPage;
     public List<String> menuSelection = new ArrayList<>(Arrays.asList("Women","Dresses"));
-    public String sortByText = "Price: Lowest first";
+    public String sortByText = "Price: Highest first";
 
     @BeforeClass()
     public void beforeClass(){
@@ -57,14 +57,15 @@ public class verifySortByOnProduct extends BaseClass {
     }
 
     @Test(priority = 5)
-    public void verifyProductOrder(){
-        productDetailPage.getAllProductList();
+    public void verifyProductOrderBy(){
+        Assert.assertTrue(productDetailPage.isProductSortBy(sortByText));
     }
 
-    /*
+
     @AfterClass
     public void afterClass(){
         //System.out.println("Thread NO : "+Thread.currentThread().getId());
         doEndTest();
-    }*/
+    }
+
 }
