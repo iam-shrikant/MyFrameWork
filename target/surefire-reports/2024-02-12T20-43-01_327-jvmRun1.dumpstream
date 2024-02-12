@@ -1,0 +1,41 @@
+# Created at 2024-02-12T20:43:36.087
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+# Created at 2024-02-12T20:43:50.771
+Unexpected IOException: 8,1,com.myframework.testcases.signin_singup.VerifyUserSingIn,verifySignInBtnIsClickable(com.myframework.testcases.signin_singup.VerifyUserSingIn),null,expected [true] but found [false],null,expected [true] but found [false],VerifyUserSingIn.verifySignInBtnIsClickable:40 expected [true] but found [false],java.lang.AssertionError: expected [true] but found [false]\000A\0009at com.myframework.testcases.signin_singup.VerifyUserSingIn.verifySignInBtnIsClickable(VerifyUserSingIn.java:40)\000A
+
+
+# Created at 2024-02-12T20:43:50.847
+Unexpected IOException: 5,1,com.myframework.testcases.signin_singup.VerifyUserSingIn,verifyUserTapOnSignInBtn(com.myframework.testcases.signin_singup.VerifyUserSingIn),com.myframework.testcases.signin_singup.VerifyUserSingIn,null,null
+
+
+# Created at 2024-02-12T20:44:00.900
+Unexpected IOException: 8,1,com.myframework.testcases.signin_singup.VerifyUserSingIn,verifyUserTapOnSignInBtn(com.myframework.testcases.signin_singup.VerifyUserSingIn),null,no such element: Unable to locate element: {"method":"xpath"\002C"selector":"//a[@class='login']"}\000A  (Session info: chrome=121.0.6167.161)\000AFor documentation on this error\002C please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\000ABuild info: version: '4.17.0'\002C revision: 'e52b1be057*'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.16'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [2cdc47758234cef3c5789e71379da056\002C findElement {value=//a[@class='login']\002C using=xpath}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 121.0.6167.161\002C chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e...\002C userDataDir: C:\005CUsers\005CShrikant\005CAppData\005CL...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:64845}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:64845/devtoo...\002C se:cdpVersion: 121.0.6167.161\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 2cdc47758234cef3c5789e71379da056,null,no such element: Unable to locate element: {"method":"xpath"\002C"selector":"//a[@class='login']"}\000A  (Session info: chrome=121.0.6167.161)\000AFor documentation on this error\002C please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\000ABuild info: version: '4.17.0'\002C revision: 'e52b1be057*'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.16'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [2cdc47758234cef3c5789e71379da056\002C findElement {value=//a[@class='login']\002C using=xpath}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 121.0.6167.161\002C chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e...\002C userDataDir: C:\005CUsers\005CShrikant\005CAppData\005CL...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:64845}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:64845/devtoo...\002C se:cdpVersion: 121.0.6167.161\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 2cdc47758234cef3c5789e71379da056,VerifyUserSingIn.verifyUserTapOnSignInBtn:45 \00BB NoSuchElement no such element: ...,org.openqa.selenium.NoSuchElementException: \000Ano such element: Unable to locate element: {"method":"xpath"\002C"selector":"//a[@class='login']"}\000A  (Session info: chrome=121.0.6167.161)\000AFor documentation on this error\002C please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\000ABuild info: version: '4.17.0'\002C revision: 'e52b1be057*'\000ASystem info: os.name: 'Windows 11'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.16'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [2cdc47758234cef3c5789e71379da056\002C findElement {value=//a[@class='login']\002C using=xpath}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 121.0.6167.161\002C chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e...\002C userDataDir: C:\005CUsers\005CShrikant\005CAppData\005CL...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:64845}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:64845/devtoo...\002C se:cdpVersion: 121.0.6167.161\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 2cdc47758234cef3c5789e71379da056\000A\0009at com.myframework.testcases.signin_singup.VerifyUserSingIn.verifyUserTapOnSignInBtn(VerifyUserSingIn.java:45)\000A
+
+
+# Created at 2024-02-12T20:44:00.904
+Unexpected IOException: 5,1,com.myframework.testcases.signin_singup.VerifyUserSingIn,verifyValidUserLogin(com.myframework.testcases.signin_singup.VerifyUserSingIn),com.myframework.testcases.signin_singup.VerifyUserSingIn,null,null
+
+
+# Created at 2024-02-12T20:44:00.906
+Unexpected IOException: 8,1,com.myframework.testcases.signin_singup.VerifyUserSingIn,verifyValidUserLogin(com.myframework.testcases.signin_singup.VerifyUserSingIn),null,null,null,null,VerifyUserSingIn.verifyValidUserLogin:62 NullPointer,java.lang.NullPointerException\000A\0009at com.myframework.testcases.signin_singup.VerifyUserSingIn.verifyValidUserLogin(VerifyUserSingIn.java:62)\000A
+
+
+# Created at 2024-02-12T20:44:00.907
+Unexpected IOException: 5,1,com.myframework.testcases.signin_singup.VerifyUserSingIn,verifyUserSignOut(com.myframework.testcases.signin_singup.VerifyUserSingIn),com.myframework.testcases.signin_singup.VerifyUserSingIn,null,null
+
+
+# Created at 2024-02-12T20:44:00.909
+Unexpected IOException: 8,1,com.myframework.testcases.signin_singup.VerifyUserSingIn,verifyUserSignOut(com.myframework.testcases.signin_singup.VerifyUserSingIn),null,null,null,null,VerifyUserSingIn.verifyUserSignOut:70 NullPointer,java.lang.NullPointerException\000A\0009at com.myframework.testcases.signin_singup.VerifyUserSingIn.verifyUserSignOut(VerifyUserSingIn.java:70)\000A
+
+
+# Created at 2024-02-12T20:44:01.209
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+

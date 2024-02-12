@@ -1,6 +1,7 @@
 package com.myframework.pages;
 
 import com.myframework.base.BaseClass;
+import com.myframework.driver_factory.DriverManager;
 import com.myframework.utitlies.Util;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -55,7 +56,7 @@ public class HomePage extends BaseClass implements Pages {
     */
 
     public HomePage(){
-        PageFactory.initElements(getDriver(), this);
+        PageFactory.initElements(DriverManager.getDriver(), this);
         menuSection = new MenuSection();
         //System.out.println("Here getting hashmap "+menuSection.getPageMenu());
         //homePageMenu();

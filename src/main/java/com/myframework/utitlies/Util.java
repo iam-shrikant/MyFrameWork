@@ -1,6 +1,7 @@
 package com.myframework.utitlies;
 
 import com.myframework.base.BaseClass;
+import com.myframework.driver_factory.DriverManager;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
@@ -15,29 +16,29 @@ import java.time.Duration;
 public class Util {
 
     public static void launchWebsite(String url) {
-        BaseClass.getDriver().get(url);
+        DriverManager.getDriver().get(url);
     }
 
     public static void exitTest() {
-        BaseClass.getDriver().quit();
+        DriverManager.getDriver().quit();
     }
 
     public static void implicitilyWait(int seconds) {
         //System.out.println("printing driver: "+this.driver);
-        BaseClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(seconds));
+        DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(seconds));
     }
 
     public static void pageLoadTimeout(int seconds) {
-        BaseClass.getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(seconds));
+        DriverManager.getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(seconds));
     }
 
     public static void maximizeScreen(){
-        BaseClass.getDriver().manage().window().maximize();
+        DriverManager.getDriver().manage().window().maximize();
     }
 
 
     public static String pageTitle(){
-        return BaseClass.getDriver().getTitle();
+        return DriverManager.getDriver().getTitle();
     }
 
     public static boolean isElementDisplayed(WebElement e){
@@ -53,7 +54,7 @@ public class Util {
 
     public static boolean isElementClickable(WebElement e, int WAIT_TIME_20_SECOND){
         try {
-            WebDriverWait wait = new WebDriverWait(BaseClass.getDriver(), Duration.ofSeconds(WAIT_TIME_20_SECOND));
+            WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(WAIT_TIME_20_SECOND));
             wait.until(ExpectedConditions.elementToBeClickable(e));
             //System.out.println("shrikant No Error -- ");
             return true;
@@ -71,7 +72,7 @@ public class Util {
 
     public static boolean isElementVisible(WebElement element,int WAIT_TIME_20_SECOND){
         try {
-            WebDriverWait wait = new WebDriverWait(BaseClass.getDriver(),Duration.ofSeconds(WAIT_TIME_20_SECOND));
+            WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(),Duration.ofSeconds(WAIT_TIME_20_SECOND));
             wait.until(ExpectedConditions.visibilityOf(element));
             return true;
         }catch (Exception e){
@@ -80,12 +81,12 @@ public class Util {
     }
 
     public static void hoverOn(WebElement element){
-        Actions action = new Actions(BaseClass.getDriver());
+        Actions action = new Actions(DriverManager.getDriver());
         action.moveToElement(element).build().perform();
     }
 
     public static void performMouseClick(WebElement element){
-        Actions action = new Actions(BaseClass.getDriver());
+        Actions action = new Actions(DriverManager.getDriver());
         action.moveToElement(element).click().build().perform();
     }
 
@@ -95,7 +96,7 @@ public class Util {
     }
 
     public static void scrollPageTillElementUsingJS(WebElement element){
-        ((JavascriptExecutor) BaseClass.getDriver()).executeScript("arguments[0].scrollIntoView(true);", element);
+        ((JavascriptExecutor) DriverManager.getDriver()).executeScript("arguments[0].scrollIntoView(true);", element);
         //Thread.sleep(500);
     }
 }

@@ -4,15 +4,8 @@
 
 package com.myframework.base;
 
+import com.myframework.driver_factory.DriverManager;
 import com.myframework.utitlies.Util;
-import com.myframework.utitlies.Utilities;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import jdk.javadoc.doclet.Reporter;
-import org.openqa.selenium.WebDriver;
-//import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
 
 import java.io.FileInputStream;
@@ -21,16 +14,32 @@ import java.util.Properties;
 
 public class BaseClass {
     public static  Properties prop = new Properties();
-    private static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
 
     //public static Utilities util;
     public final int WAIT_TIME_10_SECOND = 10;
     public final int WAIT_TIME_20_SECOND = 20;
 
-    public static void setupDriver(){
+    private synchronized void loadProperties(){
+        Log.info("BaseClass - loadProperties() initiated");
+        try {
+            prop.load(new FileInputStream(System.getProperty("user.dir") + "\\Configuration\\config.properties"));
+        } catch (IOException e) {
+            Log.info("BaseClass - loadProperties() Got Exception - "+e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    public void setupDriver(){
+        Log.info("BaseClass - setupDriver() initiated");
+        loadProperties();
+        DriverManager.setDriver(prop.getProperty("browser"));
+    }
+
+    /* Driver setup code is moved to DriverManager class in driver_factory package
+    public void setupDriver(){
         try {
             Log.info("BaseClass - setupDriver() initiated");
-            prop.load(new FileInputStream(System.getProperty("user.dir")+"\\Configuration\\config.properties"));
+            loadProperties();
             if(prop.getProperty("browser").equalsIgnoreCase("Chrome")){
                 //System.out.println("");
                 Log.info("setting up chrome driver");
@@ -38,26 +47,28 @@ public class BaseClass {
                 driver.set(new ChromeDriver());
                 //driver = new ChromeDriver();
 
-                //driver = WebDriverManager.chromedriver().create();
-            }else if(prop.getProperty("browser") == "Firefox"){
+            }else if(prop.getProperty("browser").equalsIgnoreCase("Firefox")){
                 Log.info("setting up firefox driver");
                 WebDriverManager.firefoxdriver().setup();
                 //driver = new FirefoxDriver();
                 driver.set(new FirefoxDriver());
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
             Log.info("BaseClass - setupDriver(): Got Exception -"+e.getMessage());
         }
     }
 
+
     public static WebDriver getDriver(){
-        return driver.get();
+        return DriverManager.getDriver();
     }
 
     public static void unload(){
-        driver.remove();
-    }
+        //driver.remove();
+        DriverManager.unload();
+    }*/
+
 
     public void launchWebsite(){
        // util = new Utilities();
@@ -69,7 +80,7 @@ public class BaseClass {
 
     public void doEndTest(){
         Util.exitTest();
-        driver.remove();
+        DriverManager.unload();
     }
 
 }

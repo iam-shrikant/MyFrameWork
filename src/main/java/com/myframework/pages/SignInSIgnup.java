@@ -1,6 +1,7 @@
 package com.myframework.pages;
 
 import com.myframework.base.BaseClass;
+import com.myframework.driver_factory.DriverManager;
 import com.myframework.utitlies.Util;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,7 +24,7 @@ public class SignInSIgnup extends BaseClass  implements Pages{
     WebElement errorText;
 
     public SignInSIgnup(){
-        PageFactory.initElements(getDriver(),this);
+        PageFactory.initElements(DriverManager.getDriver(),this);
     }
 
     public void enterEmailAddress(String emailAddress){

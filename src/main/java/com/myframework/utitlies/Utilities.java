@@ -6,6 +6,7 @@ package com.myframework.utitlies;
 
 import com.myframework.Interfaces.WebInterface;
 import com.myframework.base.BaseClass;
+import com.myframework.driver_factory.DriverManager;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,33 +25,33 @@ public class Utilities implements WebInterface {
 
     @Override
     public void launchWebsite(String url) {
-        BaseClass.getDriver().get(url);
+        DriverManager.getDriver().get(url);
     }
 
     @Override
     public void exitTest() {
-        BaseClass.getDriver().quit();
+        DriverManager.getDriver().quit();
     }
 
     @Override
     public void implicitilyWait(int seconds) {
         //System.out.println("printing driver: "+this.driver);
-        BaseClass.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(seconds));
+        DriverManager.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(seconds));
     }
 
     @Override
     public void pageLoadTimeout(int seconds) {
-        BaseClass.getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(seconds));
+        DriverManager.getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(seconds));
     }
 
     @Override
     public void maximizeScreen(){
-        BaseClass.getDriver().manage().window().maximize();
+        DriverManager.getDriver().manage().window().maximize();
     }
 
     @Override
     public String pageTitle(){
-        return BaseClass.getDriver().getTitle();
+        return DriverManager.getDriver().getTitle();
     }
 
     @Override
@@ -69,7 +70,7 @@ public class Utilities implements WebInterface {
     @Override
     public boolean isElementClickable(WebElement e, int WAIT_TIME_20_SECOND){
         try {
-            WebDriverWait wait = new WebDriverWait(BaseClass.getDriver(), Duration.ofSeconds(WAIT_TIME_20_SECOND));
+            WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(WAIT_TIME_20_SECOND));
             wait.until(ExpectedConditions.elementToBeClickable(e));
             //System.out.println("shrikant No Error -- ");
             return true;
@@ -89,7 +90,7 @@ public class Utilities implements WebInterface {
     @Override
     public boolean isElementVisible(WebElement element,int WAIT_TIME_20_SECOND){
         try {
-            WebDriverWait wait = new WebDriverWait(BaseClass.getDriver(),Duration.ofSeconds(WAIT_TIME_20_SECOND));
+            WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(),Duration.ofSeconds(WAIT_TIME_20_SECOND));
             wait.until(ExpectedConditions.visibilityOf(element));
             return true;
         }catch (Exception e){

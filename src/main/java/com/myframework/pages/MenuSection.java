@@ -1,6 +1,6 @@
 package com.myframework.pages;
 
-import com.myframework.base.BaseClass;
+import com.myframework.driver_factory.DriverManager;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -29,7 +29,7 @@ public class MenuSection {
     WebElement menuDresses;
 
     public MenuSection(){
-        PageFactory.initElements(BaseClass.getDriver(), this);
+        PageFactory.initElements(DriverManager.getDriver(), this);
         setMenu();
     }
 

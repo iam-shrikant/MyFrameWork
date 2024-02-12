@@ -1,6 +1,7 @@
 package com.myframework.pages;
 
 import com.myframework.base.BaseClass;
+import com.myframework.driver_factory.DriverManager;
 import com.myframework.utitlies.Util;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -24,7 +25,7 @@ public class ProductDetailPage extends BaseClass implements Pages {
 
 
     public ProductDetailPage(){
-        PageFactory.initElements(getDriver(), this);
+        PageFactory.initElements(DriverManager.getDriver(), this);
         menuSection = new MenuSection();
     }
 
