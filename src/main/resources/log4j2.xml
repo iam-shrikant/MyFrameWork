@@ -21,7 +21,7 @@
         -->
 
         <!-- <RollingFile name="DebuggerLogger" fileName="D:/temp/logs/xyz.log" filePattern="${log-path}/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">-->
-    <RollingFile name="DebuggerLogger" fileName="${log-path}AutomationRun.${date:yyyy-MM-dd}.log" filePattern="${log-path}/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
+    <RollingFile name="DebuggerLogger" fileName="${log-path}AutomationRun_${date:yyyy-MM-dd}.log" filePattern="${log-path}/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
        <PatternLayout>
            <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
        </PatternLayout>

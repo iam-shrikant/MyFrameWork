@@ -45,7 +45,7 @@ public class VerifyUserSingIn extends BaseClass {
         signInSignUpPage = homePage.clickOnSignInbtn();
     }
 
-    @Test(priority = 4, enabled = false, dataProvider = "invalidLoginData", dataProviderClass = com.myframework.testcases.dataproviders.loginDataProviders.class)
+    @Test(priority = 4, enabled = true, dataProvider = "invalidLoginData", dataProviderClass = com.myframework.testcases.dataproviders.loginDataProviders.class)
     public void verifyInvalidUserLogin(String emailId, String password){
         SoftAssert softAssert = new SoftAssert();
         signInSignUpPage.enterEmailAddress(emailId);

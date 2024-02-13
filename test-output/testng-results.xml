@@ -1,85 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="14" passed="13" failed="0" skipped="0">
+<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-12T20:35:44 IST" name="All Test Suite" finished-at="2024-02-12T20:36:07 IST" duration-ms="22443">
+  <suite started-at="2024-02-13T20:16:39 IST" name="All Test Suite" finished-at="2024-02-13T20:16:56 IST" duration-ms="17333">
     <groups>
     </groups>
-    <test started-at="2024-02-12T20:35:44 IST" name="Home Page UI Test" finished-at="2024-02-12T20:36:03 IST" duration-ms="18449">
+    <test started-at="2024-02-13T20:16:39 IST" name="Home Page UI Test" finished-at="2024-02-13T20:16:50 IST" duration-ms="11240">
       <class name="com.myframework.testcases.homepage.VerifyHomeScreen">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@292b08d6]" started-at="2024-02-12T20:35:44 IST" name="beforeClass" finished-at="2024-02-12T20:36:02 IST" duration-ms="17414" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@38425407]" started-at="2024-02-13T20:16:39 IST" name="beforeClass" finished-at="2024-02-13T20:16:50 IST" duration-ms="10783" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="verifyHomePageTitle()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@292b08d6]" started-at="2024-02-12T20:36:02 IST" name="verifyHomePageTitle" finished-at="2024-02-12T20:36:02 IST" duration-ms="60" status="PASS">
+        <test-method signature="verifyHomePageTitle()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@38425407]" started-at="2024-02-13T20:16:50 IST" name="verifyHomePageTitle" finished-at="2024-02-13T20:16:50 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitle -->
-        <test-method signature="verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.homepage.VerifyHomeScreen@292b08d6]" started-at="2024-02-12T20:36:02 IST" name="verifySignInBtnIsVisible" finished-at="2024-02-12T20:36:02 IST" duration-ms="173" status="PASS">
+        <test-method signature="verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.homepage.VerifyHomeScreen@38425407]" started-at="2024-02-13T20:16:50 IST" name="verifySignInBtnIsVisible" finished-at="2024-02-13T20:16:50 IST" duration-ms="73" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignInBtnIsVisible -->
-        <test-method signature="verifyMainMenuOptions()[pri:2, instance:com.myframework.testcases.homepage.VerifyHomeScreen@292b08d6]" started-at="2024-02-12T20:36:02 IST" name="verifyMainMenuOptions" finished-at="2024-02-12T20:36:02 IST" duration-ms="159" status="PASS">
+        <test-method signature="verifyMainMenuOptions()[pri:2, instance:com.myframework.testcases.homepage.VerifyHomeScreen@38425407]" started-at="2024-02-13T20:16:50 IST" name="verifyMainMenuOptions" finished-at="2024-02-13T20:16:50 IST" duration-ms="89" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMainMenuOptions -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@292b08d6]" started-at="2024-02-12T20:36:02 IST" name="afterClass" finished-at="2024-02-12T20:36:03 IST" duration-ms="581" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@38425407]" started-at="2024-02-13T20:16:50 IST" name="afterClass" finished-at="2024-02-13T20:16:50 IST" duration-ms="248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.myframework.testcases.homepage.VerifyHomeScreen -->
     </test> <!-- Home Page UI Test -->
-    <test started-at="2024-02-12T20:35:44 IST" name="Product-sort-by-test" finished-at="2024-02-12T20:36:06 IST" duration-ms="22007">
+    <test started-at="2024-02-13T20:16:39 IST" name="Product-sort-by-test" finished-at="2024-02-13T20:16:53 IST" duration-ms="13901">
       <class name="com.myframework.testcases.product.verifySortByOnProduct">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@3c9754d8]" started-at="2024-02-12T20:35:44 IST" name="beforeClass" finished-at="2024-02-12T20:36:01 IST" duration-ms="16949" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@26794848]" started-at="2024-02-13T20:16:39 IST" name="beforeClass" finished-at="2024-02-13T20:16:49 IST" duration-ms="10368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="hoverOnMenuAndSelectMenu()[pri:1, instance:com.myframework.testcases.product.verifySortByOnProduct@3c9754d8]" started-at="2024-02-12T20:36:01 IST" name="hoverOnMenuAndSelectMenu" finished-at="2024-02-12T20:36:04 IST" duration-ms="2732" status="PASS">
+        <test-method signature="hoverOnMenuAndSelectMenu()[pri:1, instance:com.myframework.testcases.product.verifySortByOnProduct@26794848]" started-at="2024-02-13T20:16:49 IST" name="hoverOnMenuAndSelectMenu" finished-at="2024-02-13T20:16:51 IST" duration-ms="1808" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hoverOnMenuAndSelectMenu -->
-        <test-method signature="verifyPageBreadCrumb()[pri:2, instance:com.myframework.testcases.product.verifySortByOnProduct@3c9754d8]" started-at="2024-02-12T20:36:04 IST" name="verifyPageBreadCrumb" finished-at="2024-02-12T20:36:04 IST" duration-ms="54" status="PASS">
+        <test-method signature="verifyPageBreadCrumb()[pri:2, instance:com.myframework.testcases.product.verifySortByOnProduct@26794848]" started-at="2024-02-13T20:16:51 IST" name="verifyPageBreadCrumb" finished-at="2024-02-13T20:16:51 IST" duration-ms="48" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageBreadCrumb -->
-        <test-method signature="selectSortOptionByText()[pri:3, instance:com.myframework.testcases.product.verifySortByOnProduct@3c9754d8]" started-at="2024-02-12T20:36:04 IST" name="selectSortOptionByText" finished-at="2024-02-12T20:36:05 IST" duration-ms="1327" status="PASS">
+        <test-method signature="selectSortOptionByText()[pri:3, instance:com.myframework.testcases.product.verifySortByOnProduct@26794848]" started-at="2024-02-13T20:16:51 IST" name="selectSortOptionByText" finished-at="2024-02-13T20:16:52 IST" duration-ms="1054" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectSortOptionByText -->
-        <test-method signature="scrollPageTillSortByOption()[pri:4, instance:com.myframework.testcases.product.verifySortByOnProduct@3c9754d8]" started-at="2024-02-12T20:36:05 IST" name="scrollPageTillSortByOption" finished-at="2024-02-12T20:36:05 IST" duration-ms="42" status="PASS">
+        <test-method signature="scrollPageTillSortByOption()[pri:4, instance:com.myframework.testcases.product.verifySortByOnProduct@26794848]" started-at="2024-02-13T20:16:52 IST" name="scrollPageTillSortByOption" finished-at="2024-02-13T20:16:52 IST" duration-ms="65" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scrollPageTillSortByOption -->
-        <test-method signature="verifyProductOrderBy()[pri:5, instance:com.myframework.testcases.product.verifySortByOnProduct@3c9754d8]" started-at="2024-02-12T20:36:05 IST" name="verifyProductOrderBy" finished-at="2024-02-12T20:36:06 IST" duration-ms="262" status="PASS">
+        <test-method signature="verifyProductOrderBy()[pri:5, instance:com.myframework.testcases.product.verifySortByOnProduct@26794848]" started-at="2024-02-13T20:16:52 IST" name="verifyProductOrderBy" finished-at="2024-02-13T20:16:52 IST" duration-ms="219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductOrderBy -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@3c9754d8]" started-at="2024-02-12T20:36:06 IST" name="afterClass" finished-at="2024-02-12T20:36:06 IST" duration-ms="533" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@26794848]" started-at="2024-02-13T20:16:52 IST" name="afterClass" finished-at="2024-02-13T20:16:53 IST" duration-ms="282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.myframework.testcases.product.verifySortByOnProduct -->
     </test> <!-- Product-sort-by-test -->
-    <test started-at="2024-02-12T20:35:44 IST" name="SignIn-Test" finished-at="2024-02-12T20:36:07 IST" duration-ms="22443">
+    <test started-at="2024-02-13T20:16:39 IST" name="SignIn-Test" finished-at="2024-02-13T20:16:56 IST" duration-ms="17333">
       <class name="com.myframework.testcases.signin_singup.VerifyUserSingIn">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1fa121e2]" started-at="2024-02-12T20:35:44 IST" name="beforeClass" finished-at="2024-02-12T20:36:01 IST" duration-ms="16971" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@15de0b3c]" started-at="2024-02-13T20:16:39 IST" name="beforeClass" finished-at="2024-02-13T20:16:49 IST" duration-ms="10418" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1fa121e2]" started-at="2024-02-12T20:36:01 IST" name="verifySignInBtnIsVisible" finished-at="2024-02-12T20:36:02 IST" duration-ms="379" status="PASS">
+        <test-method signature="verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@15de0b3c]" started-at="2024-02-13T20:16:49 IST" name="verifySignInBtnIsVisible" finished-at="2024-02-13T20:16:49 IST" duration-ms="106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignInBtnIsVisible -->
-        <test-method signature="verifySignInBtnIsClickable()[pri:2, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1fa121e2]" started-at="2024-02-12T20:36:02 IST" name="verifySignInBtnIsClickable" finished-at="2024-02-12T20:36:02 IST" duration-ms="292" status="PASS">
+        <test-method signature="verifySignInBtnIsClickable()[pri:2, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@15de0b3c]" started-at="2024-02-13T20:16:49 IST" name="verifySignInBtnIsClickable" finished-at="2024-02-13T20:16:49 IST" duration-ms="156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignInBtnIsClickable -->
-        <test-method signature="verifyUserTapOnSignInBtn()[pri:3, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1fa121e2]" started-at="2024-02-12T20:36:02 IST" name="verifyUserTapOnSignInBtn" finished-at="2024-02-12T20:36:03 IST" duration-ms="1354" status="PASS">
+        <test-method signature="verifyUserTapOnSignInBtn()[pri:3, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@15de0b3c]" started-at="2024-02-13T20:16:49 IST" name="verifyUserTapOnSignInBtn" finished-at="2024-02-13T20:16:50 IST" duration-ms="905" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserTapOnSignInBtn -->
-        <test-method signature="verifyValidUserLogin(java.lang.String, java.lang.String)[pri:5, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1fa121e2]" started-at="2024-02-12T20:36:03 IST" name="verifyValidUserLogin" data-provider="validLoginData" finished-at="2024-02-12T20:36:05 IST" duration-ms="1820" status="PASS">
+        <test-method signature="verifyInvalidUserLogin(java.lang.String, java.lang.String)[pri:4, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@15de0b3c]" started-at="2024-02-13T20:16:51 IST" name="verifyInvalidUserLogin" data-provider="invalidLoginData" finished-at="2024-02-13T20:16:53 IST" duration-ms="1211" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test@testqa.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testing@12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidUserLogin -->
+        <test-method signature="verifyInvalidUserLogin(java.lang.String, java.lang.String)[pri:4, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@15de0b3c]" started-at="2024-02-13T20:16:53 IST" name="verifyInvalidUserLogin" data-provider="invalidLoginData" finished-at="2024-02-13T20:16:54 IST" duration-ms="1015" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test124@testqa.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testing@1222345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidUserLogin -->
+        <test-method signature="verifyValidUserLogin(java.lang.String, java.lang.String)[pri:5, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@15de0b3c]" started-at="2024-02-13T20:16:54 IST" name="verifyValidUserLogin" data-provider="validLoginData" finished-at="2024-02-13T20:16:55 IST" duration-ms="1224" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,11 +127,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyValidUserLogin -->
-        <test-method signature="verifyUserSignOut()[pri:6, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1fa121e2]" started-at="2024-02-12T20:36:05 IST" name="verifyUserSignOut" finished-at="2024-02-12T20:36:06 IST" duration-ms="1081" status="PASS">
+        <test-method signature="verifyUserSignOut()[pri:6, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@15de0b3c]" started-at="2024-02-13T20:16:55 IST" name="verifyUserSignOut" finished-at="2024-02-13T20:16:56 IST" duration-ms="954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserSignOut -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1fa121e2]" started-at="2024-02-12T20:36:06 IST" name="afterClass" finished-at="2024-02-12T20:36:07 IST" duration-ms="435" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@15de0b3c]" started-at="2024-02-13T20:16:56 IST" name="afterClass" finished-at="2024-02-13T20:16:56 IST" duration-ms="198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

@@ -28,3 +28,9 @@
 2024-02-12 20:52:07,324 INFO c.m.b.Log [TestNG-tests-3] BaseClass - loadProperties() initiated
 2024-02-12 20:52:07,324 INFO c.m.b.Log [TestNG-tests-1] BaseClass - loadProperties() initiated
 2024-02-12 20:52:07,324 INFO c.m.b.Log [TestNG-tests-2] BaseClass - loadProperties() initiated
+2024-02-12 20:53:50,129 INFO c.m.b.Log [TestNG-tests-2] BaseClass - setupDriver() initiated
+2024-02-12 20:53:50,129 INFO c.m.b.Log [TestNG-tests-3] BaseClass - setupDriver() initiated
+2024-02-12 20:53:50,129 INFO c.m.b.Log [TestNG-tests-1] BaseClass - setupDriver() initiated
+2024-02-12 20:53:50,133 INFO c.m.b.Log [TestNG-tests-3] BaseClass - loadProperties() initiated
+2024-02-12 20:53:50,133 INFO c.m.b.Log [TestNG-tests-2] BaseClass - loadProperties() initiated
+2024-02-12 20:53:50,133 INFO c.m.b.Log [TestNG-tests-1] BaseClass - loadProperties() initiated
