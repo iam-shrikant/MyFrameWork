@@ -13,10 +13,10 @@ public class MenuSection {
     @FindBy(xpath = "//div[@id='block_top_menu']/ul/li[1]/a") //  //div[@id='block_top_menu']/ul/li/a
     WebElement menuWomen;
 
-    @FindBy(xpath = "//div[@id='block_top_menu']/ul/li[1]/a/following-sibling::ul/li[1]")
+    @FindBy(xpath = "//div[@id='block_top_menu']/ul/li[1]/a/following-sibling::ul/li[1]/a")
     WebElement menuWomenTops;
 
-    @FindBy(xpath = "//div[@id='block_top_menu']/ul/li[1]/a/following-sibling::ul/li[1]/ul/li[1]")
+    @FindBy(xpath = "//div[@id='block_top_menu']/ul/li[1]/a/following-sibling::ul/li[1]/ul/li[1]/a")
     WebElement menuWomenTopsTshirt;
 
     @FindBy(xpath = "//div[@id='block_top_menu']/ul/li[1]/a/following-sibling::ul/li[1]/ul/li[2]")

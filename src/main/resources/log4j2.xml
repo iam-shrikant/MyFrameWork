@@ -48,7 +48,7 @@
 </Loggers>
 -->
     <Loggers>
-        <Root level="info" additivity="false">
+        <Root level="OFF" additivity="false">
             <AppenderRef ref="LogToConsole"/>
             <AppenderRef ref="DebuggerLogger"/>
         </Root>

@@ -29,10 +29,10 @@ public class BaseClass {
         }
     }
 
-    public void setupDriver(){
+    public void setupDriver(String browser){
         Log.info("BaseClass - setupDriver() initiated");
         loadProperties();
-        DriverManager.setDriver(prop.getProperty("browser"));
+        DriverManager.setDriver(browser);
     }
 
     /* Driver setup code is moved to DriverManager class in driver_factory package

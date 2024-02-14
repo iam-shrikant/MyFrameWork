@@ -25,7 +25,7 @@ public class loginDataProviders {
             excelUtility.readExcel(filePath,fileName);
             return excelUtility.getAllDataBySheetName("Login_details",true);
         } catch (IOException e) {
-            Log.error("loginDataProviders - invalidLoginData(): Got IOException "+e.getMessage());
+            Log.error("loginDataProviders - invalidLoginData(): Got IOException ",e);
             e.printStackTrace();
         }
         return new Object[0][0];

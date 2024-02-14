@@ -1,5 +1,6 @@
 package com.myframework.base;
 
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -14,8 +15,9 @@ public final class Log {
         log.fatal(message);
     }
 
-    public static void error(String message){
-        log.error(message);
+    public static void error(String message, Exception e){
+        //log.error(message);
+        log.log(Level.ERROR,message,e);
     }
 
     public static void warn(String message){

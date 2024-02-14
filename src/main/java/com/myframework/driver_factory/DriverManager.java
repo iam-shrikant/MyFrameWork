@@ -2,6 +2,7 @@ package com.myframework.driver_factory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public final class DriverManager { //no one should able to extend this class
@@ -16,7 +17,7 @@ public final class DriverManager { //no one should able to extend this class
         if(browserName.equalsIgnoreCase("Chrome")){
             driver.set(new ChromeDriver());
         }else if(browserName.equalsIgnoreCase("Firefox")){
-            driver.set(new ChromeDriver());
+            driver.set(new FirefoxDriver());
         }
     }
 

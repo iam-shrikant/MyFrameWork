@@ -7,7 +7,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.*;
 
 public class ProductDetailPage extends BaseClass implements Pages {
@@ -35,10 +38,11 @@ public class ProductDetailPage extends BaseClass implements Pages {
     }
 
     public boolean verifyPageBreadCrumb(List<String> menuSelection){
+        Util.checkElementToBeVisibleByFluetWait(pageBreadCrumb, WAIT_TIME_20_SECOND);
         String[] breadCrumb = Util.getText(pageBreadCrumb).split(">");
+        return menuSelection.equals(Arrays.asList(breadCrumb));
         //System.out.println(Arrays.toString(breadCrumb));
         //System.out.println(menuSelection);
-        return menuSelection.equals(Arrays.asList(breadCrumb));
     }
 
     public void scrollPageTillSortByOption(){

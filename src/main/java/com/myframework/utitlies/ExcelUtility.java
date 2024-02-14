@@ -25,7 +25,7 @@ public class ExcelUtility {
             inputStream = new FileInputStream(excelFile);
 
         } catch (FileNotFoundException e) {
-            Log.error("ExcelUtility - readExcel() -> Got Exception :"+e.getMessage());
+            Log.error("ExcelUtility - readExcel() -> Got Exception :",e);
             e.printStackTrace();
         }
         String fileExtension = fileName.substring(fileName.indexOf(".")); //get file extension
@@ -33,14 +33,14 @@ public class ExcelUtility {
             try {
                 workbook = new XSSFWorkbook(inputStream);
             } catch (IOException e) {
-                Log.error("ExcelUtility - readExcel() -> Got Exception :"+e.getMessage());
+                Log.error("ExcelUtility - readExcel() -> Got Exception :",e);
                 e.printStackTrace();
             }
         }else if(fileExtension.equals(".xls")){
             try {
                 workbook = new HSSFWorkbook(inputStream);
             } catch (IOException e) {
-                Log.error("ExcelUtility - readExcel() -> Got Exception :"+e.getMessage());
+                Log.error("ExcelUtility - readExcel() -> Got Exception :",e);
                 e.printStackTrace();
             }
         }

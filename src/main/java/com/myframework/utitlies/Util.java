@@ -1,16 +1,12 @@
 package com.myframework.utitlies;
 
-import com.myframework.base.BaseClass;
+import com.myframework.base.Log;
 import com.myframework.driver_factory.DriverManager;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.TimeoutException;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.interactions.MoveTargetOutOfBoundsException;
+import org.openqa.selenium.support.ui.*;
 
-import javax.swing.*;
 import java.time.Duration;
 
 public class Util {
@@ -44,13 +40,28 @@ public class Util {
     public static boolean isElementDisplayed(WebElement e){
         return e.isDisplayed();
     }
-
-
     public static void clickOn(WebElement e){
         e.click();
     }
 
-    public static String getText(WebElement e){ return e.getText();}
+    public static String getText(WebElement e){
+        return e.getText();
+    }
+
+    public static void waitElementToBeVisible(WebElement e, int seconds){
+        WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(seconds));
+        wait.until(ExpectedConditions.visibilityOf(e));
+    }
+
+    public static void checkElementToBeVisibleByFluetWait(WebElement e, int seconds){
+        FluentWait<WebDriver> wait = new FluentWait<>(DriverManager.getDriver())
+                .withTimeout(Duration.ofSeconds(seconds))
+                .pollingEvery(Duration.ofSeconds(5))
+                .ignoring(Exception.class)
+                .withMessage("Element Not yet visible");
+
+        wait.until(ExpectedConditions.visibilityOf(e));
+    }
 
     public static boolean isElementClickable(WebElement e, int WAIT_TIME_20_SECOND){
         try {
@@ -80,13 +91,22 @@ public class Util {
         }
     }
 
-    public static void hoverOn(WebElement element){
+    public static void hoverOn(WebElement element,int WAIT_TIME_20_SECOND){
         Actions action = new Actions(DriverManager.getDriver());
-        action.moveToElement(element).build().perform();
+        try {
+            WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(),Duration.ofSeconds(WAIT_TIME_20_SECOND));
+            wait.until(ExpectedConditions.elementToBeClickable(element));
+            action.moveToElement(element).build().perform();
+        }catch (MoveTargetOutOfBoundsException e){
+            Log.error("Util - hoverOn(): Got Exception:",e);
+            e.printStackTrace();
+        }
     }
 
-    public static void performMouseClick(WebElement element){
+    public static void performMouseClick(WebElement element,int WAIT_TIME_10_SECOND){
         Actions action = new Actions(DriverManager.getDriver());
+        WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(),Duration.ofSeconds(WAIT_TIME_10_SECOND));
+        wait.until(ExpectedConditions.elementToBeClickable(element));
         action.moveToElement(element).click().build().perform();
     }
 

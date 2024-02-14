@@ -16,10 +16,11 @@ public class VerifyHomeScreen extends BaseClass {
     public static final String HOME_PAGE_TITLE = "My Shop";
     public static final List<String> HOME_PAGE_MENU = new ArrayList<String>(Arrays.asList("WOMEN","DRESSES","T-SHIRTS","BLOG"));
 
+    @Parameters(value = "browser")
     @BeforeClass
-    public void beforeClass(){
+    public void beforeClass(String browser){
         //System.out.println("VerifyHomeScreen beforeClass Thread NO : "+Thread.currentThread().getId());
-        setupDriver();
+        setupDriver(browser);
         launchWebsite();
         homePage = new HomePage();
     }

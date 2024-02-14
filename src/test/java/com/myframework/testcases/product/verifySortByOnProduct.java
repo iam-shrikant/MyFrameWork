@@ -4,9 +4,7 @@ import com.myframework.base.BaseClass;
 import com.myframework.pages.HomePage;
 import com.myframework.pages.ProductDetailPage;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -27,17 +25,17 @@ public class verifySortByOnProduct extends BaseClass {
     public List<String> menuSelection = new ArrayList<>(Arrays.asList("Women","Dresses"));
     public String sortByText = "Price: Highest first";
 
+    @Parameters(value = "browser")
     @BeforeClass()
-    public void beforeClass(){
+    public void beforeClass(@Optional("firefox") String browser){
         //System.out.println("verifySortByOnProduct - Before Class");
-        setupDriver();
+        setupDriver(browser);
         launchWebsite();
         homePage = new HomePage();
     }
 
-
     @Test(priority = 1)
-    public void hoverOnMenuAndSelectMenu(){
+    public void hoverOnMenuAndSelectMenu() {
         productDetailPage = homePage.hoverOnMenuAndSelectMenu(menuSelection);
     }
 
@@ -67,5 +65,4 @@ public class verifySortByOnProduct extends BaseClass {
         //System.out.println("Thread NO : "+Thread.currentThread().getId());
         doEndTest();
     }
-
 }

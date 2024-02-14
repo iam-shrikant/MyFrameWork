@@ -21,10 +21,11 @@ public class VerifyUserSingIn extends BaseClass {
     private SignInSIgnup signInSignUpPage;
     private AccountPage accountPage;
 
+    @Parameters(value = "browser")
     @BeforeClass()
-    public void beforeClass(){
+    public void beforeClass(String browser){
         //System.out.println("VerifyUserSingIn beforeClass- beforeClass Thread NO : "+Thread.currentThread().getId());
-        setupDriver();
+        setupDriver(browser);
         launchWebsite();
         homePage = new HomePage();
     }
