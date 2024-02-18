@@ -122,10 +122,10 @@ public class HomePage extends BaseClass implements Pages {
         menu.append("menu");
         for (String m:menuToSelect) {
             menu.append(m);
-            System.out.println(menu);
+            //System.out.println(menu);
             Util.hoverOn(menuHashMap.get(menu.toString()), WAIT_TIME_20_SECOND);
         }
-        System.out.println(menu.toString());
+        //System.out.println(menu.toString());
         Util.performMouseClick(menuHashMap.get(menu.toString()),WAIT_TIME_20_SECOND);
         return new ProductDetailPage();
     }

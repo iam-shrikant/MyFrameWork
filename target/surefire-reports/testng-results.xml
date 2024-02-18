@@ -1,85 +1,430 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="14" passed="13" failed="0" skipped="0">
+<testng-results ignored="0" total="15" passed="5" failed="0" skipped="10">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-12T20:53:49 IST" name="All Test Suite" finished-at="2024-02-12T20:54:03 IST" duration-ms="13741">
+  <suite started-at="2024-02-17T14:47:41 IST" name="All Test Suite" finished-at="2024-02-17T14:48:12 IST" duration-ms="30650">
     <groups>
     </groups>
-    <test started-at="2024-02-12T20:53:49 IST" name="Home Page UI Test" finished-at="2024-02-12T20:53:59 IST" duration-ms="10173">
+    <test started-at="2024-02-17T14:47:41 IST" name="Home Page UI Test" finished-at="2024-02-17T14:47:41 IST" duration-ms="49">
       <class name="com.myframework.testcases.homepage.VerifyHomeScreen">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@7c83dc97]" started-at="2024-02-12T20:53:49 IST" name="beforeClass" finished-at="2024-02-12T20:53:59 IST" duration-ms="9709" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@3e96bacf]" started-at="2024-02-17T14:47:41 IST" name="beforeClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1708161461838" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="verifyHomePageTitle()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@7c83dc97]" started-at="2024-02-12T20:53:59 IST" name="verifyHomePageTitle" finished-at="2024-02-12T20:53:59 IST" duration-ms="17" status="PASS">
+        <test-method signature="verifyHomePageTitle()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@3e96bacf]" started-at="2024-02-17T14:47:41 IST" name="verifyHomePageTitle" finished-at="2024-02-17T14:47:41 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitle -->
-        <test-method signature="verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.homepage.VerifyHomeScreen@7c83dc97]" started-at="2024-02-12T20:53:59 IST" name="verifySignInBtnIsVisible" finished-at="2024-02-12T20:53:59 IST" duration-ms="55" status="PASS">
+        <test-method signature="verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.homepage.VerifyHomeScreen@3e96bacf]" started-at="2024-02-17T14:47:41 IST" name="verifySignInBtnIsVisible" finished-at="2024-02-17T14:47:41 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignInBtnIsVisible -->
-        <test-method signature="verifyMainMenuOptions()[pri:2, instance:com.myframework.testcases.homepage.VerifyHomeScreen@7c83dc97]" started-at="2024-02-12T20:53:59 IST" name="verifyMainMenuOptions" finished-at="2024-02-12T20:53:59 IST" duration-ms="92" status="PASS">
+        <test-method signature="verifyMainMenuOptions()[pri:2, instance:com.myframework.testcases.homepage.VerifyHomeScreen@3e96bacf]" started-at="2024-02-17T14:47:41 IST" name="verifyMainMenuOptions" finished-at="2024-02-17T14:47:41 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMainMenuOptions -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@7c83dc97]" started-at="2024-02-12T20:53:59 IST" name="afterClass" finished-at="2024-02-12T20:53:59 IST" duration-ms="280" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@3e96bacf]" started-at="2024-02-17T14:47:41 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1708161461873" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.myframework.testcases.homepage.VerifyHomeScreen -->
     </test> <!-- Home Page UI Test -->
-    <test started-at="2024-02-12T20:53:49 IST" name="Product-sort-by-test" finished-at="2024-02-12T20:54:02 IST" duration-ms="13439">
-      <class name="com.myframework.testcases.product.verifySortByOnProduct">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@55b53d44]" started-at="2024-02-12T20:53:49 IST" name="beforeClass" finished-at="2024-02-12T20:53:58 IST" duration-ms="9281" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="hoverOnMenuAndSelectMenu()[pri:1, instance:com.myframework.testcases.product.verifySortByOnProduct@55b53d44]" started-at="2024-02-12T20:53:58 IST" name="hoverOnMenuAndSelectMenu" finished-at="2024-02-12T20:54:00 IST" duration-ms="1984" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hoverOnMenuAndSelectMenu -->
-        <test-method signature="verifyPageBreadCrumb()[pri:2, instance:com.myframework.testcases.product.verifySortByOnProduct@55b53d44]" started-at="2024-02-12T20:54:00 IST" name="verifyPageBreadCrumb" finished-at="2024-02-12T20:54:00 IST" duration-ms="65" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPageBreadCrumb -->
-        <test-method signature="selectSortOptionByText()[pri:3, instance:com.myframework.testcases.product.verifySortByOnProduct@55b53d44]" started-at="2024-02-12T20:54:00 IST" name="selectSortOptionByText" finished-at="2024-02-12T20:54:02 IST" duration-ms="1359" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectSortOptionByText -->
-        <test-method signature="scrollPageTillSortByOption()[pri:4, instance:com.myframework.testcases.product.verifySortByOnProduct@55b53d44]" started-at="2024-02-12T20:54:02 IST" name="scrollPageTillSortByOption" finished-at="2024-02-12T20:54:02 IST" duration-ms="43" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scrollPageTillSortByOption -->
-        <test-method signature="verifyProductOrderBy()[pri:5, instance:com.myframework.testcases.product.verifySortByOnProduct@55b53d44]" started-at="2024-02-12T20:54:02 IST" name="verifyProductOrderBy" finished-at="2024-02-12T20:54:02 IST" duration-ms="224" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductOrderBy -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@55b53d44]" started-at="2024-02-12T20:54:02 IST" name="afterClass" finished-at="2024-02-12T20:54:02 IST" duration-ms="448" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.myframework.testcases.product.verifySortByOnProduct -->
-    </test> <!-- Product-sort-by-test -->
-    <test started-at="2024-02-12T20:53:49 IST" name="SignIn-Test" finished-at="2024-02-12T20:54:03 IST" duration-ms="13741">
+    <test started-at="2024-02-17T14:47:41 IST" name="SignIn-Test" finished-at="2024-02-17T14:47:43 IST" duration-ms="1398">
       <class name="com.myframework.testcases.signin_singup.VerifyUserSingIn">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@e1de817]" started-at="2024-02-12T20:53:49 IST" name="beforeClass" finished-at="2024-02-12T20:53:59 IST" duration-ms="9483" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@2beee7ff]" started-at="2024-02-17T14:47:41 IST" name="beforeClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1708161461838" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@e1de817]" started-at="2024-02-12T20:53:59 IST" name="verifySignInBtnIsVisible" finished-at="2024-02-12T20:53:59 IST" duration-ms="160" status="PASS">
+        <test-method signature="verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@2beee7ff]" started-at="2024-02-17T14:47:41 IST" name="verifySignInBtnIsVisible" finished-at="2024-02-17T14:47:41 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignInBtnIsVisible -->
-        <test-method signature="verifySignInBtnIsClickable()[pri:2, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@e1de817]" started-at="2024-02-12T20:53:59 IST" name="verifySignInBtnIsClickable" finished-at="2024-02-12T20:53:59 IST" duration-ms="160" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySignInBtnIsClickable -->
-        <test-method signature="verifyUserTapOnSignInBtn()[pri:3, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@e1de817]" started-at="2024-02-12T20:53:59 IST" name="verifyUserTapOnSignInBtn" finished-at="2024-02-12T20:54:00 IST" duration-ms="961" status="PASS">
+        <test-method signature="verifyUserTapOnSignInBtn()[pri:3, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@2beee7ff]" started-at="2024-02-17T14:47:41 IST" name="verifyUserTapOnSignInBtn" finished-at="2024-02-17T14:47:41 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserTapOnSignInBtn -->
-        <test-method signature="verifyValidUserLogin(java.lang.String, java.lang.String)[pri:5, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@e1de817]" started-at="2024-02-12T20:54:00 IST" name="verifyValidUserLogin" data-provider="validLoginData" finished-at="2024-02-12T20:54:01 IST" duration-ms="1472" status="PASS">
+        <test-method signature="verifySignInBtnIsClickable()[pri:2, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@2beee7ff]" started-at="2024-02-17T14:47:41 IST" name="verifySignInBtnIsClickable" finished-at="2024-02-17T14:47:41 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignInBtnIsClickable -->
+        <test-method signature="verifyInvalidUserLogin(java.lang.String, java.lang.String)[pri:4, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@2beee7ff]" started-at="2024-02-17T14:47:43 IST" name="verifyInvalidUserLogin" data-provider="invalidLoginData" finished-at="2024-02-17T14:47:43 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test@testqa.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testing@12345]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidUserLogin -->
+        <test-method signature="verifyInvalidUserLogin(java.lang.String, java.lang.String)[pri:4, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@2beee7ff]" started-at="2024-02-17T14:47:43 IST" name="verifyInvalidUserLogin" data-provider="invalidLoginData" finished-at="2024-02-17T14:47:43 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test124@testqa.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testing@1222345]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidUserLogin -->
+        <test-method signature="verifyUserSignOut()[pri:6, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@2beee7ff]" started-at="2024-02-17T14:47:43 IST" name="verifyUserSignOut" finished-at="2024-02-17T14:47:43 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserSignOut -->
+        <test-method signature="verifyValidUserLogin(java.lang.String, java.lang.String)[pri:5, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@2beee7ff]" started-at="2024-02-17T14:47:43 IST" name="verifyValidUserLogin" data-provider="validLoginData" finished-at="2024-02-17T14:47:43 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -92,18 +437,84 @@
               </value>
             </param>
           </params>
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyValidUserLogin -->
-        <test-method signature="verifyUserSignOut()[pri:6, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@e1de817]" started-at="2024-02-12T20:54:01 IST" name="verifyUserSignOut" finished-at="2024-02-12T20:54:02 IST" duration-ms="1150" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserSignOut -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@e1de817]" started-at="2024-02-12T20:54:02 IST" name="afterClass" finished-at="2024-02-12T20:54:03 IST" duration-ms="320" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@2beee7ff]" started-at="2024-02-17T14:47:43 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1708161463223" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.myframework.testcases.signin_singup.VerifyUserSingIn -->
     </test> <!-- SignIn-Test -->
+    <test started-at="2024-02-17T14:47:41 IST" name="Product-sort-by-test" finished-at="2024-02-17T14:48:12 IST" duration-ms="30650">
+      <class name="com.myframework.testcases.product.verifySortByOnProduct">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@3315d2d7]" started-at="2024-02-17T14:47:41 IST" name="beforeClass" finished-at="2024-02-17T14:47:53 IST" duration-ms="12076" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="hoverOnMenuAndSelectMenu()[pri:1, instance:com.myframework.testcases.product.verifySortByOnProduct@3315d2d7]" started-at="2024-02-17T14:47:53 IST" name="hoverOnMenuAndSelectMenu" finished-at="2024-02-17T14:47:55 IST" duration-ms="1154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hoverOnMenuAndSelectMenu -->
+        <test-method signature="verifyPageBreadCrumb()[pri:2, instance:com.myframework.testcases.product.verifySortByOnProduct@3315d2d7]" started-at="2024-02-17T14:47:55 IST" name="verifyPageBreadCrumb" finished-at="2024-02-17T14:48:10 IST" duration-ms="15149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageBreadCrumb -->
+        <test-method signature="selectSortOptionByText()[pri:3, instance:com.myframework.testcases.product.verifySortByOnProduct@3315d2d7]" started-at="2024-02-17T14:48:10 IST" name="selectSortOptionByText" finished-at="2024-02-17T14:48:11 IST" duration-ms="1303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSortOptionByText -->
+        <test-method signature="scrollPageTillSortByOption()[pri:4, instance:com.myframework.testcases.product.verifySortByOnProduct@3315d2d7]" started-at="2024-02-17T14:48:11 IST" name="scrollPageTillSortByOption" finished-at="2024-02-17T14:48:11 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scrollPageTillSortByOption -->
+        <test-method signature="verifyProductOrderBy()[pri:5, instance:com.myframework.testcases.product.verifySortByOnProduct@3315d2d7]" started-at="2024-02-17T14:48:11 IST" name="verifyProductOrderBy" finished-at="2024-02-17T14:48:11 IST" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductOrderBy -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@3315d2d7]" started-at="2024-02-17T14:48:11 IST" name="afterClass" finished-at="2024-02-17T14:48:12 IST" duration-ms="862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.myframework.testcases.product.verifySortByOnProduct -->
+    </test> <!-- Product-sort-by-test -->
   </suite> <!-- All Test Suite -->
 </testng-results>

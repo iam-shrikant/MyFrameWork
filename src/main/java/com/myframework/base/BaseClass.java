@@ -5,6 +5,7 @@
 package com.myframework.base;
 
 import com.myframework.driver_factory.DriverManager;
+import com.myframework.utitlies.Log;
 import com.myframework.utitlies.Util;
 
 
@@ -24,8 +25,7 @@ public class BaseClass {
         try {
             prop.load(new FileInputStream(System.getProperty("user.dir") + "\\Configuration\\config.properties"));
         } catch (IOException e) {
-            Log.info("BaseClass - loadProperties() Got Exception - "+e.getMessage());
-            e.printStackTrace();
+            Log.error("BaseClass - loadProperties() Got Exception -",e);
         }
     }
 
@@ -69,9 +69,9 @@ public class BaseClass {
         DriverManager.unload();
     }*/
 
-
     public void launchWebsite(){
        // util = new Utilities();
+        Log.info("BaseClass - launchWebsite() initiated");
         Util.implicitilyWait(WAIT_TIME_10_SECOND);
         Util.pageLoadTimeout(WAIT_TIME_20_SECOND);
         Util.launchWebsite(prop.getProperty("url"));
@@ -82,5 +82,4 @@ public class BaseClass {
         Util.exitTest();
         DriverManager.unload();
     }
-
 }

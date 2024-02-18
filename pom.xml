@@ -76,9 +76,6 @@
       <artifactId>log4j-api</artifactId>
       <version>2.22.1</version>
     </dependency>
-
-
-
   </dependencies>
 
   <build>
@@ -105,7 +102,8 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
           <configuration>
-            <suiteXmlFiles>parallel-execution-testng.xml</suiteXmlFiles>
+            <!--<suiteXmlFiles>parallel-execution-testng.xml</suiteXmlFiles>-->
+            <suiteXmlFiles>testng.xml</suiteXmlFiles>
           </configuration>
         </plugin>
         <plugin>

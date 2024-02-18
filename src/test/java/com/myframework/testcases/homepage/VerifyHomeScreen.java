@@ -1,31 +1,21 @@
 package com.myframework.testcases.homepage;
 
-import com.myframework.base.BaseClass;
+
 import com.myframework.pages.HomePage;
+import com.myframework.testcases.basetest.BaseTestClass;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class VerifyHomeScreen extends BaseClass {
+public class VerifyHomeScreen extends BaseTestClass {
 
-    private HomePage homePage;
     public static final String HOME_PAGE_TITLE = "My Shop";
     public static final List<String> HOME_PAGE_MENU = new ArrayList<String>(Arrays.asList("WOMEN","DRESSES","T-SHIRTS","BLOG"));
 
-    @Parameters(value = "browser")
-    @BeforeClass
-    public void beforeClass(String browser){
-        //System.out.println("VerifyHomeScreen beforeClass Thread NO : "+Thread.currentThread().getId());
-        setupDriver(browser);
-        launchWebsite();
-        homePage = new HomePage();
-    }
-
-    @Test(priority = 0)
+    @Test(priority = 0,groups = {"smoke"})
     public void verifyHomePageTitle(){
         String title = homePage.getPageTitle();
         Assert.assertEquals(title,HOME_PAGE_TITLE);
@@ -41,9 +31,5 @@ public class VerifyHomeScreen extends BaseClass {
        Assert.assertTrue(homePage.verifyMainMenuOptions(HOME_PAGE_MENU));
     }
 
-    @AfterClass
-    public void afterClass(){
-        //System.out.println("Thread NO : "+Thread.currentThread().getId());
-        doEndTest();
-    }
+
 }

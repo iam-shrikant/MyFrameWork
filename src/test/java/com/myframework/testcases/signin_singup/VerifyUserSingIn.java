@@ -4,12 +4,13 @@ import com.myframework.base.BaseClass;
 import com.myframework.pages.AccountPage;
 import com.myframework.pages.HomePage;
 import com.myframework.pages.SignInSIgnup;
+import com.myframework.testcases.basetest.BaseTestClass;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
-public class VerifyUserSingIn extends BaseClass {
+public class VerifyUserSingIn extends BaseTestClass {
     //tc1: verify sign-in button is visible or not
     //tc2: verify user is able to click on sign-in button
     //tc3: verify user tap on sign-in button
@@ -17,21 +18,10 @@ public class VerifyUserSingIn extends BaseClass {
     //tc5: verify user provided correct login details
     //tc6: verify login successful
     //tc7: Verify Logout
-    private HomePage homePage;
     private SignInSIgnup signInSignUpPage;
     private AccountPage accountPage;
 
-    @Parameters(value = "browser")
-    @BeforeClass()
-    public void beforeClass(String browser){
-        //System.out.println("VerifyUserSingIn beforeClass- beforeClass Thread NO : "+Thread.currentThread().getId());
-        setupDriver(browser);
-        launchWebsite();
-        homePage = new HomePage();
-    }
-
-
-    @Test(priority = 1)
+    @Test(priority = 1,groups = {"smoke"})
     public void verifySignInBtnIsVisible(){
         Assert.assertTrue(homePage.isSignInBtnDisplayed());
     }
@@ -70,12 +60,5 @@ public class VerifyUserSingIn extends BaseClass {
     public void verifyUserSignOut(){
         signInSignUpPage = accountPage.signOutUser();
         Assert.assertEquals(signInSignUpPage.expectedPageTitle,signInSignUpPage.getPageTitle());
-    }
-
-
-    @AfterClass
-    public void afterClass(){
-        //System.out.println("Thread NO : "+Thread.currentThread().getId());
-        doEndTest();
     }
 }

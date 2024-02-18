@@ -1,6 +1,6 @@
 package com.myframework.testcases.dataproviders;
 
-import com.myframework.base.Log;
+import com.myframework.utitlies.Log;
 import com.myframework.utitlies.ExcelUtility;
 import org.testng.annotations.DataProvider;
 

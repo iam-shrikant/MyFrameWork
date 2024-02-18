@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.291 s - in TestSuite
+Tests run: 19, Failures: 2, Errors: 0, Skipped: 12, Time elapsed: 31.277 s <<< FAILURE! - in TestSuite
+beforeClass(com.myframework.testcases.homepage.VerifyHomeScreen)  Time elapsed: 0.443 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+
+beforeClass(com.myframework.testcases.signin_singup.VerifyUserSingIn)  Time elapsed: 0.444 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'browser' is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+

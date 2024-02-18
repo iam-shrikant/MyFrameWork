@@ -1,8 +1,7 @@
 package com.myframework.testcases.product;
 
-import com.myframework.base.BaseClass;
-import com.myframework.pages.HomePage;
 import com.myframework.pages.ProductDetailPage;
+import com.myframework.testcases.basetest.BaseTestClass;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -10,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class verifySortByOnProduct extends BaseClass {
+public class verifySortByOnProduct extends BaseTestClass {
 
     //tc1: Open a url on browser
     //tc2: Hover on Women Menu -> Tap on Dress
@@ -20,26 +19,17 @@ public class verifySortByOnProduct extends BaseClass {
     //tc6: Verify product should get sorted in lowest price first
 
 
-    private HomePage homePage;
     private ProductDetailPage productDetailPage;
     public List<String> menuSelection = new ArrayList<>(Arrays.asList("Women","Dresses"));
     public String sortByText = "Price: Highest first";
 
-    @Parameters(value = "browser")
-    @BeforeClass()
-    public void beforeClass(@Optional("firefox") String browser){
-        //System.out.println("verifySortByOnProduct - Before Class");
-        setupDriver(browser);
-        launchWebsite();
-        homePage = new HomePage();
-    }
 
-    @Test(priority = 1)
+    @Test(priority = 1,groups = {"smoke"})
     public void hoverOnMenuAndSelectMenu() {
         productDetailPage = homePage.hoverOnMenuAndSelectMenu(menuSelection);
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2,groups = {"smoke"})
     public void verifyPageBreadCrumb(){
          Assert.assertTrue(productDetailPage.verifyPageBreadCrumb(menuSelection));
     }
@@ -59,10 +49,4 @@ public class verifySortByOnProduct extends BaseClass {
         Assert.assertTrue(productDetailPage.isProductSortBy(sortByText));
     }
 
-
-    @AfterClass
-    public void afterClass(){
-        //System.out.println("Thread NO : "+Thread.currentThread().getId());
-        doEndTest();
-    }
 }

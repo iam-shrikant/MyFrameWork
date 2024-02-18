@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SignIn-Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/7</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 12 20:53:49 IST 2024</td>
+<td>Started on:</td><td>Sat Feb 17 14:47:41 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>13 seconds (13741 ms)</td>
+<tr><td>Total time:</td><td>1 seconds (1398 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,38 +67,314 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.myframework.testcases.signin_singup.VerifyUserSingIn.verifySignInBtnIsClickable()'><b>verifySignInBtnIsClickable</b><br>Test class: com.myframework.testcases.signin_singup.VerifyUserSingIn</td>
+<td title='com.myframework.testcases.signin_singup.VerifyUserSingIn.beforeClass()'><b>beforeClass</b><br>Test class: com.myframework.testcases.signin_singup.VerifyUserSingIn</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace519823833", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace519823833'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>-1708161461</td>
+<td>com.myframework.testcases.signin_singup.VerifyUserSingIn@2beee7ff</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.myframework.testcases.signin_singup.VerifyUserSingIn.afterClass()'><b>afterClass</b><br>Test class: com.myframework.testcases.signin_singup.VerifyUserSingIn</td>
 <td></td>
+<td>-1708161463</td>
+<td>com.myframework.testcases.signin_singup.VerifyUserSingIn@2beee7ff</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.myframework.testcases.signin_singup.VerifyUserSingIn.verifyInvalidUserLogin()'><b>verifyInvalidUserLogin</b><br>Test class: com.myframework.testcases.signin_singup.VerifyUserSingIn<br>Parameters: test@testqa.com, Testing@12345</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace822437060", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace822437060'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
 <td>0</td>
-<td>com.myframework.testcases.signin_singup.VerifyUserSingIn@e1de817</td></tr>
+<td>com.myframework.testcases.signin_singup.VerifyUserSingIn@2beee7ff</td></tr>
+<tr>
+<td title='com.myframework.testcases.signin_singup.VerifyUserSingIn.verifyInvalidUserLogin()'><b>verifyInvalidUserLogin</b><br>Test class: com.myframework.testcases.signin_singup.VerifyUserSingIn<br>Parameters: test124@testqa.com, Testing@1222345</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace495202746", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace495202746'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>com.myframework.testcases.signin_singup.VerifyUserSingIn@2beee7ff</td></tr>
+<tr>
+<td title='com.myframework.testcases.signin_singup.VerifyUserSingIn.verifySignInBtnIsClickable()'><b>verifySignInBtnIsClickable</b><br>Test class: com.myframework.testcases.signin_singup.VerifyUserSingIn</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1654156483", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1654156483'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>com.myframework.testcases.signin_singup.VerifyUserSingIn@2beee7ff</td></tr>
 <tr>
 <td title='com.myframework.testcases.signin_singup.VerifyUserSingIn.verifySignInBtnIsVisible()'><b>verifySignInBtnIsVisible</b><br>Test class: com.myframework.testcases.signin_singup.VerifyUserSingIn</td>
-<td></td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace363120331", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace363120331'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
 <td>0</td>
-<td>com.myframework.testcases.signin_singup.VerifyUserSingIn@e1de817</td></tr>
+<td>com.myframework.testcases.signin_singup.VerifyUserSingIn@2beee7ff</td></tr>
 <tr>
 <td title='com.myframework.testcases.signin_singup.VerifyUserSingIn.verifyUserSignOut()'><b>verifyUserSignOut</b><br>Test class: com.myframework.testcases.signin_singup.VerifyUserSingIn</td>
-<td></td>
-<td>1</td>
-<td>com.myframework.testcases.signin_singup.VerifyUserSingIn@e1de817</td></tr>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1555510081", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1555510081'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>com.myframework.testcases.signin_singup.VerifyUserSingIn@2beee7ff</td></tr>
 <tr>
 <td title='com.myframework.testcases.signin_singup.VerifyUserSingIn.verifyUserTapOnSignInBtn()'><b>verifyUserTapOnSignInBtn</b><br>Test class: com.myframework.testcases.signin_singup.VerifyUserSingIn</td>
-<td></td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1421638932", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1421638932'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
 <td>0</td>
-<td>com.myframework.testcases.signin_singup.VerifyUserSingIn@e1de817</td></tr>
+<td>com.myframework.testcases.signin_singup.VerifyUserSingIn@2beee7ff</td></tr>
 <tr>
 <td title='com.myframework.testcases.signin_singup.VerifyUserSingIn.verifyValidUserLogin()'><b>verifyValidUserLogin</b><br>Test class: com.myframework.testcases.signin_singup.VerifyUserSingIn<br>Parameters: test@testqa.com, Testing@1234</td>
-<td></td>
-<td>1</td>
-<td>com.myframework.testcases.signin_singup.VerifyUserSingIn@e1de817</td></tr>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace416385126", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace416385126'><pre>org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeClass on method beforeClass but has not been marked @Optional or defined
+in C:\Users\Shrikant\IdeaProjects\MyFrameWork\parallel-execution-testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:268)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:764)
+	at org.testng.TestRunner.run(TestRunner.java:585)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre></div></td>
+<td>0</td>
+<td>com.myframework.testcases.signin_singup.VerifyUserSingIn@2beee7ff</td></tr>
 </table><p>
 </body>
 </html>

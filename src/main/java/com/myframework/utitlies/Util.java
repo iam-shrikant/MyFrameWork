@@ -1,13 +1,16 @@
 package com.myframework.utitlies;
 
-import com.myframework.base.Log;
 import com.myframework.driver_factory.DriverManager;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.MoveTargetOutOfBoundsException;
 import org.openqa.selenium.support.ui.*;
 
+import java.io.File;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 
 public class Util {
 
@@ -119,4 +122,18 @@ public class Util {
         ((JavascriptExecutor) DriverManager.getDriver()).executeScript("arguments[0].scrollIntoView(true);", element);
         //Thread.sleep(500);
     }
+
+    public static void captureScreenshot(){
+        String dateName = new SimpleDateFormat("yyyy-MM-dd_hhmm:s").format(new Date());
+        TakesScreenshot screenshot = (TakesScreenshot) DriverManager.getDriver();
+        File source =  screenshot.getScreenshotAs(OutputType.FILE);
+        String destination = System.getProperty("user.dir") + "\\Screenshots\\" + "screenshot_" + "_" + dateName + ".png";
+        try {
+            FileUtils.copyFile(source, new File(destination));
+        } catch (Exception e) {
+            Log.error("Failed to capture Screenshot, Got Exception -",e);
+            //e.getMessage();
+        }
+    }
+
 }

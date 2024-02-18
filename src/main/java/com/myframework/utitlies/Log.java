@@ -1,4 +1,4 @@
-package com.myframework.base;
+package com.myframework.utitlies;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
@@ -8,7 +8,7 @@ public final class Log {
     private static Logger log = LogManager.getLogger(Log.class);
 
     private Log(){
-
+        //not allowing anyone to create object of Log class
     }
 
     public static void fatal(String message){

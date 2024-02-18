@@ -1,154 +1,28 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="https://www.w3.org/1999/xhtml">
 <head>
-<meta charset='utf-8'>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 <title>TestNG Report</title>
-<style type="text/css">
-table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
-td,th {border:1px solid #009;padding:.25em .5em}
-.result th {vertical-align:bottom}
-.param th {padding-left:1em;padding-right:1em}
-.param td {padding-left:.5em;padding-right:2em}
-.stripe td,.stripe th {background-color: #E6EBF9}
-.numi,.numi_attn {text-align:right}
-.total td {font-weight:bold}
-.passedodd td {background-color: #0A0}
-.passedeven td {background-color: #3F3}
-.skippedodd td {background-color: #CCC}
-.skippedodd td {background-color: #DDD}
-.failedodd td,.numi_attn {background-color: #F33}
-.failedeven td,.stripe .numi_attn {background-color: #D00}
-.stacktrace {white-space:pre;font-family:monospace}
-.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
-</style>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
 </head>
 <body>
-<table cellspacing="0" cellpadding="0" class="testOverview">
-<tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Chrome-Test</a></td><td class="numi">15</td><td class="numi">15</td><td class="numi">0</td><td class="numi">0</td><td class="numi">17.5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t2">Firefox-Test</a></td><td class="numi">15</td><td class="numi">15</td><td class="numi">0</td><td class="numi">0</td><td class="numi">28.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="total"><td>Total</td>
-<td class="numi">30</td><td class="numi">30</td><td class="numi">0</td><td class="numi">0</td><td class="numi">46.2 seconds</td><td colspan="2">&nbsp;</td></tr>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">All Test Suite</th></tr>
+<tr><td><a href="#t0">Chrome-Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">17,383</td><td>smoke</td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Firefox-Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">31,565</td><td>smoke</td><td></td></tr>
+<tr><th>Total</th><th class="num">8</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">48,948</th><th colspan="2"></th></tr>
 </table>
-<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
-<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr id="t1"><th colspan="5">Chrome-Test &#8212; passed</th></tr>
-<tr class="passedodd"><td>com.myframework.testcases.signin_singup.VerifyUserSingIn</td><td><a href="#m1"><b>verifySignInBtnIsVisible</b>  </a></td><td class="numi">1</td><td>1707909941299</td><td class="numi">65</td></tr>
-<tr class="passedeven"><td rowspan="2">com.myframework.testcases.homepage.VerifyHomeScreen</td><td><a href="#m2"><b>verifyHomePageTitle</b>  </a></td><td class="numi">1</td><td>1707909941330</td><td class="numi">18</td></tr><tr class="passedeven"><td><a href="#m3"><b>verifySignInBtnIsVisible</b>  </a></td><td class="numi">1</td><td>1707909941351</td><td class="numi">61</td></tr>
-<tr class="passedodd"><td>com.myframework.testcases.signin_singup.VerifyUserSingIn</td><td><a href="#m4"><b>verifySignInBtnIsClickable</b>  </a></td><td class="numi">1</td><td>1707909941365</td><td class="numi">108</td></tr>
-<tr class="passedeven"><td>com.myframework.testcases.homepage.VerifyHomeScreen</td><td><a href="#m5"><b>verifyMainMenuOptions</b>  </a></td><td class="numi">1</td><td>1707909941412</td><td class="numi">95</td></tr>
-<tr class="passedodd"><td>com.myframework.testcases.signin_singup.VerifyUserSingIn</td><td><a href="#m6"><b>verifyUserTapOnSignInBtn</b>  </a></td><td class="numi">1</td><td>1707909941474</td><td class="numi">958</td></tr>
-<tr class="passedeven"><td>com.myframework.testcases.product.verifySortByOnProduct</td><td><a href="#m7"><b>hoverOnMenuAndSelectMenu</b>  </a></td><td class="numi">1</td><td>1707909941805</td><td class="numi">2206</td></tr>
-<tr class="passedodd"><td>com.myframework.testcases.signin_singup.VerifyUserSingIn</td><td><a href="#m8"><b>verifyInvalidUserLogin</b>  </a></td><td class="numi">2</td><td>1707909943333</td><td class="numi">2204</td></tr>
-<tr class="passedeven"><td rowspan="2">com.myframework.testcases.product.verifySortByOnProduct</td><td><a href="#m9"><b>verifyPageBreadCrumb</b>  </a></td><td class="numi">1</td><td>1707909944011</td><td class="numi">115</td></tr><tr class="passedeven"><td><a href="#m10"><b>selectSortOptionByText</b>  </a></td><td class="numi">1</td><td>1707909944127</td><td class="numi">1007</td></tr>
-<tr class="passedodd"><td>com.myframework.testcases.signin_singup.VerifyUserSingIn</td><td><a href="#m11"><b>verifyInvalidUserLogin</b>  </a></td><td class="numi">2</td><td>1707909943333</td><td class="numi">2204</td></tr>
-<tr class="passedeven"><td rowspan="2">com.myframework.testcases.product.verifySortByOnProduct</td><td><a href="#m12"><b>scrollPageTillSortByOption</b>  </a></td><td class="numi">1</td><td>1707909945135</td><td class="numi">63</td></tr><tr class="passedeven"><td><a href="#m13"><b>verifyProductOrderBy</b>  </a></td><td class="numi">1</td><td>1707909945198</td><td class="numi">201</td></tr>
-<tr class="passedodd"><td rowspan="2">com.myframework.testcases.signin_singup.VerifyUserSingIn</td><td><a href="#m14"><b>verifyValidUserLogin</b>  </a></td><td class="numi">1</td><td>1707909945538</td><td class="numi">1303</td></tr><tr class="passedodd"><td><a href="#m15"><b>verifyUserSignOut</b>  </a></td><td class="numi">1</td><td>1707909946842</td><td class="numi">884</td></tr>
-<tr id="t2"><th colspan="5">Firefox-Test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="3">com.myframework.testcases.signin_singup.VerifyUserSingIn</td><td><a href="#m16"><b>verifySignInBtnIsVisible</b>  </a></td><td class="numi">1</td><td>1707909958022</td><td class="numi">84</td></tr><tr class="passedodd"><td><a href="#m17"><b>verifySignInBtnIsClickable</b>  </a></td><td class="numi">1</td><td>1707909958107</td><td class="numi">86</td></tr><tr class="passedodd"><td><a href="#m18"><b>verifyUserTapOnSignInBtn</b>  </a></td><td class="numi">1</td><td>1707909958193</td><td class="numi">989</td></tr>
-<tr class="passedeven"><td rowspan="3">com.myframework.testcases.homepage.VerifyHomeScreen</td><td><a href="#m19"><b>verifyHomePageTitle</b>  </a></td><td class="numi">1</td><td>1707909958421</td><td class="numi">6</td></tr><tr class="passedeven"><td><a href="#m20"><b>verifySignInBtnIsVisible</b>  </a></td><td class="numi">1</td><td>1707909958427</td><td class="numi">51</td></tr><tr class="passedeven"><td><a href="#m21"><b>verifyMainMenuOptions</b>  </a></td><td class="numi">1</td><td>1707909958478</td><td class="numi">97</td></tr>
-<tr class="passedodd"><td>com.myframework.testcases.product.verifySortByOnProduct</td><td><a href="#m22"><b>hoverOnMenuAndSelectMenu</b>  </a></td><td class="numi">1</td><td>1707909958506</td><td class="numi">1228</td></tr>
-<tr class="passedeven"><td>com.myframework.testcases.signin_singup.VerifyUserSingIn</td><td><a href="#m23"><b>verifyInvalidUserLogin</b>  </a></td><td class="numi">2</td><td>1707909959235</td><td class="numi">1772</td></tr>
-<tr class="passedodd"><td>com.myframework.testcases.product.verifySortByOnProduct</td><td><a href="#m24"><b>verifyPageBreadCrumb</b>  </a></td><td class="numi">1</td><td>1707909959735</td><td class="numi">15098</td></tr>
-<tr class="passedeven"><td rowspan="3">com.myframework.testcases.signin_singup.VerifyUserSingIn</td><td><a href="#m25"><b>verifyInvalidUserLogin</b>  </a></td><td class="numi">2</td><td>1707909959235</td><td class="numi">1772</td></tr><tr class="passedeven"><td><a href="#m26"><b>verifyValidUserLogin</b>  </a></td><td class="numi">1</td><td>1707909961008</td><td class="numi">1140</td></tr><tr class="passedeven"><td><a href="#m27"><b>verifyUserSignOut</b>  </a></td><td class="numi">1</td><td>1707909962148</td><td class="numi">918</td></tr>
-<tr class="passedodd"><td rowspan="3">com.myframework.testcases.product.verifySortByOnProduct</td><td><a href="#m28"><b>selectSortOptionByText</b>  </a></td><td class="numi">1</td><td>1707909974833</td><td class="numi">874</td></tr><tr class="passedodd"><td><a href="#m29"><b>scrollPageTillSortByOption</b>  </a></td><td class="numi">1</td><td>1707909975707</td><td class="numi">12</td></tr><tr class="passedodd"><td><a href="#m30"><b>verifyProductOrderBy</b>  </a></td><td class="numi">1</td><td>1707909975719</td><td class="numi">65</td></tr>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">All Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Chrome-Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.myframework.testcases.homepage.VerifyHomeScreen</td><td><a href="#m0">verifyHomePageTitle</a></td><td rowspan="1">1708262976752</td><td rowspan="1">76</td></tr><tr class="passedodd"><td rowspan="2">com.myframework.testcases.product.verifySortByOnProduct</td><td><a href="#m1">hoverOnMenuAndSelectMenu</a></td><td rowspan="1">1708262977401</td><td rowspan="1">2580</td></tr><tr class="passedodd"><td><a href="#m2">verifyPageBreadCrumb</a></td><td rowspan="1">1708262979981</td><td rowspan="1">164</td></tr><tr class="passedeven"><td rowspan="1">com.myframework.testcases.signin_singup.VerifyUserSingIn</td><td><a href="#m3">verifySignInBtnIsVisible</a></td><td rowspan="1">1708262976752</td><td rowspan="1">207</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Firefox-Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.myframework.testcases.homepage.VerifyHomeScreen</td><td><a href="#m4">verifyHomePageTitle</a></td><td rowspan="1">1708262977646</td><td rowspan="1">7</td></tr><tr class="passedodd"><td rowspan="2">com.myframework.testcases.product.verifySortByOnProduct</td><td><a href="#m5">hoverOnMenuAndSelectMenu</a></td><td rowspan="1">1708262977812</td><td rowspan="1">1227</td></tr><tr class="passedodd"><td><a href="#m6">verifyPageBreadCrumb</a></td><td rowspan="1">1708262979040</td><td rowspan="1">15132</td></tr><tr class="passedeven"><td rowspan="1">com.myframework.testcases.signin_singup.VerifyUserSingIn</td><td><a href="#m7">verifySignInBtnIsVisible</a></td><td rowspan="1">1708262987723</td><td rowspan="1">40</td></tr></tbody>
 </table>
-<h1>Chrome-Test</h1>
-<h2 id="m1">com.myframework.testcases.signin_singup.VerifyUserSingIn:verifyUserTapOnSignInBtn</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">com.myframework.testcases.homepage.VerifyHomeScreen:verifySignInBtnIsVisible</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">com.myframework.testcases.homepage.VerifyHomeScreen:verifyMainMenuOptions</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">com.myframework.testcases.product.verifySortByOnProduct:hoverOnMenuAndSelectMenu</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m5">com.myframework.testcases.signin_singup.VerifyUserSingIn:verifyUserSignOut</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m6">com.myframework.testcases.product.verifySortByOnProduct:verifyProductOrderBy</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m7">com.myframework.testcases.signin_singup.VerifyUserSingIn:verifySignInBtnIsVisible</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m8">com.myframework.testcases.signin_singup.VerifyUserSingIn:verifyInvalidUserLogin</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>test124@testqa.com</td>
-<td>Testing@1222345</td>
-</tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m9">com.myframework.testcases.signin_singup.VerifyUserSingIn:verifyValidUserLogin</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>test@testqa.com</td>
-<td>Testing@1234</td>
-</tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m10">com.myframework.testcases.product.verifySortByOnProduct:scrollPageTillSortByOption</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m11">com.myframework.testcases.signin_singup.VerifyUserSingIn:verifyInvalidUserLogin</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>test@testqa.com</td>
-<td>Testing@12345</td>
-</tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m12">com.myframework.testcases.product.verifySortByOnProduct:verifyPageBreadCrumb</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m13">com.myframework.testcases.product.verifySortByOnProduct:selectSortOptionByText</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m14">com.myframework.testcases.homepage.VerifyHomeScreen:verifyHomePageTitle</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m15">com.myframework.testcases.signin_singup.VerifyUserSingIn:verifySignInBtnIsClickable</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h1>Firefox-Test</h1>
-<h2 id="m16">com.myframework.testcases.product.verifySortByOnProduct:selectSortOptionByText</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m17">com.myframework.testcases.homepage.VerifyHomeScreen:verifyHomePageTitle</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m18">com.myframework.testcases.signin_singup.VerifyUserSingIn:verifySignInBtnIsVisible</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m19">com.myframework.testcases.signin_singup.VerifyUserSingIn:verifyInvalidUserLogin</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>test@testqa.com</td>
-<td>Testing@12345</td>
-</tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m20">com.myframework.testcases.product.verifySortByOnProduct:verifyProductOrderBy</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m21">com.myframework.testcases.signin_singup.VerifyUserSingIn:verifyInvalidUserLogin</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>test124@testqa.com</td>
-<td>Testing@1222345</td>
-</tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m22">com.myframework.testcases.signin_singup.VerifyUserSingIn:verifyUserTapOnSignInBtn</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m23">com.myframework.testcases.product.verifySortByOnProduct:scrollPageTillSortByOption</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m24">com.myframework.testcases.homepage.VerifyHomeScreen:verifyMainMenuOptions</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m25">com.myframework.testcases.homepage.VerifyHomeScreen:verifySignInBtnIsVisible</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m26">com.myframework.testcases.product.verifySortByOnProduct:hoverOnMenuAndSelectMenu</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m27">com.myframework.testcases.product.verifySortByOnProduct:verifyPageBreadCrumb</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m28">com.myframework.testcases.signin_singup.VerifyUserSingIn:verifyValidUserLogin</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
-<tr class="param stripe"><td>test@testqa.com</td>
-<td>Testing@1234</td>
-</tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m29">com.myframework.testcases.signin_singup.VerifyUserSingIn:verifySignInBtnIsClickable</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m30">com.myframework.testcases.signin_singup.VerifyUserSingIn:verifyUserSignOut</h2>
-<p class="totop"><a href="#summary">back to summary</a></p>
-</body></html>
+<h2>Chrome-Test</h2><h3 id="m0">com.myframework.testcases.homepage.VerifyHomeScreen#verifyHomePageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.myframework.testcases.product.verifySortByOnProduct#hoverOnMenuAndSelectMenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.myframework.testcases.product.verifySortByOnProduct#verifyPageBreadCrumb</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.myframework.testcases.signin_singup.VerifyUserSingIn#verifySignInBtnIsVisible</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Firefox-Test</h2><h3 id="m4">com.myframework.testcases.homepage.VerifyHomeScreen#verifyHomePageTitle</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.myframework.testcases.product.verifySortByOnProduct#hoverOnMenuAndSelectMenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.myframework.testcases.product.verifySortByOnProduct#verifyPageBreadCrumb</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.myframework.testcases.signin_singup.VerifyUserSingIn#verifySignInBtnIsVisible</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
