@@ -20,6 +20,11 @@ public final class Log {
         log.log(Level.ERROR,message,e);
     }
 
+    public static void error(String message){
+        //log.error(message);
+        log.log(Level.ERROR,message);
+    }
+
     public static void warn(String message){
         log.warn(message);
     }

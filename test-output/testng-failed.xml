@@ -1,36 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="Chrome-Test(failed)">
+  <listeners>
+    <listener class-name="com.myframework.utitlies.ListnerClass"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="Chrome-Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.myframework.testcases.signin_singup.VerifyUserSingIn">
+      <class name="com.myframework.testcases.homepage.VerifyHomeScreen">
         <methods>
-          <include name="beforeClass"/>
-          <include name="verifySignInBtnIsClickable"/>
-          <include name="verifyValidUserLogin" invocation-numbers="0"/>
+          <include name="beforeSuit"/>
+          <include name="afterSuit"/>
+          <include name="afterMethod"/>
           <include name="afterClass"/>
-          <include name="verifyInvalidUserLogin" invocation-numbers="0 1"/>
-          <include name="verifyUserSignOut"/>
-          <include name="verifyUserTapOnSignInBtn"/>
+          <include name="beforeMethod"/>
+          <include name="failedTestCase"/>
+          <include name="beforeClass"/>
+          <include name="skippedTestCase"/>
         </methods>
-      </class> <!-- com.myframework.testcases.signin_singup.VerifyUserSingIn -->
+      </class> <!-- com.myframework.testcases.homepage.VerifyHomeScreen -->
     </classes>
   </test> <!-- Chrome-Test(failed) -->
-  <test thread-count="5" parallel="tests" name="Firefox-Test(failed)">
+  <test thread-count="5" parallel="classes" name="Firefox-Test(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.myframework.testcases.signin_singup.VerifyUserSingIn">
+      <class name="com.myframework.testcases.homepage.VerifyHomeScreen">
         <methods>
-          <include name="beforeClass"/>
-          <include name="verifySignInBtnIsClickable"/>
-          <include name="verifyValidUserLogin" invocation-numbers="0"/>
+          <include name="beforeSuit"/>
+          <include name="afterSuit"/>
+          <include name="afterMethod"/>
           <include name="afterClass"/>
-          <include name="verifyInvalidUserLogin" invocation-numbers="0 1"/>
-          <include name="verifyUserSignOut"/>
-          <include name="verifyUserTapOnSignInBtn"/>
+          <include name="beforeMethod"/>
+          <include name="failedTestCase"/>
+          <include name="beforeClass"/>
+          <include name="skippedTestCase"/>
         </methods>
-      </class> <!-- com.myframework.testcases.signin_singup.VerifyUserSingIn -->
+      </class> <!-- com.myframework.testcases.homepage.VerifyHomeScreen -->
     </classes>
   </test> <!-- Firefox-Test(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

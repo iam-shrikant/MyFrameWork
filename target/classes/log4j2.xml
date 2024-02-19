@@ -48,8 +48,8 @@
 </Loggers>
 -->
     <Loggers>
-        <Root level="OFF" additivity="false">
-            <AppenderRef ref="LogToConsole"/>
+        <Root level="INFO" additivity="false">
+            <!--<AppenderRef ref="LogToConsole"/>-->
             <AppenderRef ref="DebuggerLogger"/>
         </Root>
     </Loggers>
