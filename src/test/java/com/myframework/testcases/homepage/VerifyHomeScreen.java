@@ -35,7 +35,7 @@ public class VerifyHomeScreen extends BaseTestClass {
        Assert.assertTrue(homePage.verifyMainMenuOptions(HOME_PAGE_MENU));
     }
 
-    @Test(priority = 3)
+    /*@Test(priority = 3)
     public void failedTestCase(){
         Assert.assertTrue(false);
     }
@@ -47,6 +47,6 @@ public class VerifyHomeScreen extends BaseTestClass {
 
     @Test(priority =5, enabled = false)
     public void skippedTestCase2(){
-    }
+    }*/
 
 }

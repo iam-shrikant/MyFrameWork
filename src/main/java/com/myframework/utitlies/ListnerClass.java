@@ -1,66 +1,71 @@
 package com.myframework.utitlies;
 
-import org.testng.ITestContext;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
+import org.testng.*;
 
-public class ListnerClass implements ITestListener {
-    private ExtentReportManager extentReportManager;
+public class ListnerClass implements ISuiteListener, IClassListener,ITestListener {
+
+    /*
     @Override
     public void onStart(ITestContext context) {
-        //ITestListener.super.onStart(context);
-        System.out.println("ListnerClass -onStart "+context.getName());
-        extentReportManager = new ExtentReportManager();
+        ITestListener.super.onStart(context);
     }
 
     @Override
+    public void onFinish(ITestContext context) {
+        ITestListener.super.onFinish(context);
+    }
+*/
+    @Override
+    public void onStart(ISuite suite) {
+        //ISuiteListener.super.onStart(suite);
+        ExtentReportManager.initReport();
+    }
+    @Override
+    public void onBeforeClass(ITestClass testClass) {
+        //IClassListener.super.onBeforeClass(testClass);
+        ExtentReportManager.createTest(testClass);
+    }
+
+
+    @Override
     public void onTestStart(ITestResult result) {
-        //ITestListener.super.onTestStart(result);
-        System.out.println("ListnerClass - onTestStart "+result.getName());
-        extentReportManager.createTest(result);
+        //ExtentLogger.reportInfo(result.getName()+" Started");
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        //ITestListener.super.onTestSuccess(result);
-        System.out.println("ListnerClass - onTestSuccess "+result.getName());
-        extentReportManager.reportPassedTestCase(result);
+        ExtentLogger.reportPassedTestCase(result);
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
-        //ITestListener.super.onTestFailure(result);
-        System.out.println("ListnerClass - onTestFailure "+result.getName());
-        extentReportManager.reportFailedTestCase(result);
+        ExtentLogger.reportPassedTestCase(result);
         Log.error(result.getName()+" - Failed -"+result.getThrowable().getMessage());
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
-        //ITestListener.super.onTestSkipped(result);
-        System.out.println("ListnerClass - onTestSkipped "+result.getName());
-        extentReportManager.reportSkippedTestCase(result);
+        //System.out.println("ListnerClass - onTestSkipped "+result.getName());
+        ExtentLogger.reportSkippedTestCase(result);
         Log.error(result.getName()+" - Skipped -"+result.getThrowable().getMessage());
+    }
+
+
+    @Override
+    public void onAfterClass(ITestClass testClass) {
+        IClassListener.super.onAfterClass(testClass);
+    }
+
+    @Override
+    public void onFinish(ISuite suite) {
+        ExtentReportManager.flushReport();
     }
 
     @Override
     public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-        //ITestListener.super.onTestFailedButWithinSuccessPercentage(result);
-        //System.out.println("ListnerClass -");
     }
 
     @Override
     public void onTestFailedWithTimeout(ITestResult result) {
-        //ITestListener.super.onTestFailedWithTimeout(result);
-        //System.out.println("ListnerClass -");
     }
-
-    @Override
-    public void onFinish(ITestContext context) {
-        //ITestListener.super.onFinish(context);
-        System.out.println("ListnerClass -onFinish "+context.getName());
-        extentReportManager.flushReport();
-    }
-
-
 }

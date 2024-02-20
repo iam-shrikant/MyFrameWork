@@ -12,6 +12,7 @@ public class BaseTestClass extends BaseClass {
     @BeforeSuite(alwaysRun = true)
     public void beforeSuit(){
         Log.info("Test Suit Execution Started");
+        loadProperties();
         System.out.println("beforeSuit");
     }
 

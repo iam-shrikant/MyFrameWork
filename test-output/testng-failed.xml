@@ -14,28 +14,12 @@
           <include name="afterMethod"/>
           <include name="afterClass"/>
           <include name="beforeMethod"/>
-          <include name="failedTestCase"/>
+          <include name="verifyHomePageTitle"/>
+          <include name="verifyMainMenuOptions"/>
           <include name="beforeClass"/>
-          <include name="skippedTestCase"/>
+          <include name="verifySignInBtnIsVisible"/>
         </methods>
       </class> <!-- com.myframework.testcases.homepage.VerifyHomeScreen -->
     </classes>
   </test> <!-- Chrome-Test(failed) -->
-  <test thread-count="5" parallel="classes" name="Firefox-Test(failed)">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="com.myframework.testcases.homepage.VerifyHomeScreen">
-        <methods>
-          <include name="beforeSuit"/>
-          <include name="afterSuit"/>
-          <include name="afterMethod"/>
-          <include name="afterClass"/>
-          <include name="beforeMethod"/>
-          <include name="failedTestCase"/>
-          <include name="beforeClass"/>
-          <include name="skippedTestCase"/>
-        </methods>
-      </class> <!-- com.myframework.testcases.homepage.VerifyHomeScreen -->
-    </classes>
-  </test> <!-- Firefox-Test(failed) -->
 </suite> <!-- Failed suite [All Test Suite] -->

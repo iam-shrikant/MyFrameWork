@@ -1,12 +1,10 @@
 package com.myframework.testcases.signin_singup;
 
-import com.myframework.base.BaseClass;
+
 import com.myframework.pages.AccountPage;
-import com.myframework.pages.HomePage;
 import com.myframework.pages.SignInSIgnup;
 import com.myframework.testcases.basetest.BaseTestClass;
 import org.testng.Assert;
-import org.testng.Reporter;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
@@ -36,7 +34,7 @@ public class VerifyUserSingIn extends BaseTestClass {
         signInSignUpPage = homePage.clickOnSignInbtn();
     }
 
-    @Test(priority = 4, enabled = true, dataProvider = "invalidLoginData", dataProviderClass = com.myframework.testcases.dataproviders.loginDataProviders.class)
+    @Test(priority = 4, dataProvider = "invalidLoginData", dataProviderClass = com.myframework.testcases.dataproviders.loginDataProviders.class)
     public void verifyInvalidUserLogin(String emailId, String password){
         SoftAssert softAssert = new SoftAssert();
         signInSignUpPage.enterEmailAddress(emailId);

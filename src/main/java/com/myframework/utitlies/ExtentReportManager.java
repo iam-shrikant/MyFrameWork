@@ -6,55 +6,61 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+import org.testng.ITestClass;
 import org.testng.ITestResult;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Objects;
 
-public class ExtentReportManager {
+public final class ExtentReportManager {
 
-    public ExtentReports report;
-    public ExtentSparkReporter allReporter;
-    public ExtentSparkReporter failedReporter;
-    public ExtentTest extentTest;
-    public ExtentReportManager() {
-        final File CONF = new File(System.getProperty("user.dir")+"/Configuration/extent-config.xml");
+    private static ExtentReports report;
+    private static ExtentSparkReporter allReporter;
+    private static ExtentSparkReporter failedReporter;
+    //private static ExtentTest extentTest;
 
-        allReporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/test-output/ExtentReport/index.html");
-        try {
-            allReporter.loadXMLConfig(CONF);
-        } catch (IOException e) {
-            Log.error("ExtentReportManager - ExtentReportManager() - Got exception :",e);
+    private ExtentReportManager() {
+
+    }
+
+    public static void initReport(){
+        if(Objects.isNull(report)){
+            //final File CONF = new File(System.getProperty("user.dir")+"/Configuration/extent-config.xml");
+            allReporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/extent-test-output/index.html");
+            allReporter.config().setReportName("Automation Suit Report");
+            allReporter.config().setTheme(Theme.STANDARD);
+            allReporter.config().setDocumentTitle("Automation Suit Test cases");
+            /*try {
+                allReporter.loadXMLConfig(CONF);
+            } catch (IOException e) {
+                Log.error("ExtentReportManager - ExtentReportManager() - Got exception :",e);
+            }*/
+
+            failedReporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/extent-test-output/failed-testCases.html");
+            failedReporter.filter().statusFilter().as(new Status[]{Status.FAIL});
+            failedReporter.config().setReportName("Failed Test Report");
+            failedReporter.config().setTheme(Theme.DARK);
+            failedReporter.config().setDocumentTitle("Failed Test cases");
+
+            report = new ExtentReports();
+            report.attachReporter(allReporter,failedReporter);
+            report.setSystemInfo("OS","Window 11");
+            report.setSystemInfo("Browsers","Chrome,FireFox");
         }
-
-        failedReporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/test-output/ExtentReport/failed-testCases.html");
-        failedReporter.filter().statusFilter().as(new Status[]{Status.FAIL});
-        failedReporter.config().setReportName("Failed test cases");
-
-
-        report = new ExtentReports();
-        report.attachReporter(allReporter,failedReporter);
-        report.setSystemInfo("OS","Window 11");
-        report.setSystemInfo("Browsers","Chrome,FireFox");
     }
 
-    public void createTest(ITestResult result){
-        extentTest = report.createTest(result.getName());
+    public static void createTest(ITestClass result){
+        ExtentTest extentTest = report.createTest(result.getName());
+        ExtentTestManager.setExtentTest(extentTest);
     }
 
-    public void reportFailedTestCase(ITestResult result){
-        extentTest.log(Status.FAIL, MarkupHelper.createLabel("Failed Test Case: "+result.getName(), ExtentColor.RED));
-    }
 
-    public void reportPassedTestCase(ITestResult result){
-        extentTest.log(Status.PASS, MarkupHelper.createLabel("Passed Test Case: "+result.getName(), ExtentColor.GREEN));
-    }
 
-    public void reportSkippedTestCase(ITestResult result){
-        extentTest.log(Status.SKIP, MarkupHelper.createLabel("Skipped Test Case: "+result.getName(), ExtentColor.YELLOW));
-    }
-
-    public void flushReport(){
-        report.flush();
+    public static void flushReport(){
+        if(Objects.nonNull(report)){
+            report.flush();
+        }
     }
 }

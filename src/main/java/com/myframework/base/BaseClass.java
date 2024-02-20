@@ -20,7 +20,7 @@ public class BaseClass {
     public final int WAIT_TIME_10_SECOND = 10;
     public final int WAIT_TIME_20_SECOND = 20;
 
-    private synchronized void loadProperties(){
+    public synchronized void loadProperties(){
         Log.info("BaseClass - loadProperties() initiated");
         try {
             prop.load(new FileInputStream(System.getProperty("user.dir") + "\\Configuration\\config.properties"));
@@ -31,7 +31,7 @@ public class BaseClass {
 
     public void setupDriver(String browser){
         Log.info("BaseClass - setupDriver() initiated");
-        loadProperties();
+        //loadProperties();
         DriverManager.setDriver(browser);
     }
 

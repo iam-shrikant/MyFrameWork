@@ -2,6 +2,8 @@ package com.myframework.pages;
 
 import com.myframework.base.BaseClass;
 import com.myframework.driver_factory.DriverManager;
+import com.myframework.utitlies.ExtentLogger;
+import com.myframework.utitlies.ExtentTestManager;
 import com.myframework.utitlies.Util;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
