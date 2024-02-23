@@ -9,6 +9,7 @@
             </run>
         </groups>-->
 
+    
     <test name="Chrome-Test" parallel="classes" thread-count="6">
         <parameter name="browser" value="chrome"></parameter>
         <classes>
