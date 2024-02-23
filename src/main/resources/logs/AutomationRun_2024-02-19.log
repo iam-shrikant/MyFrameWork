@@ -1,0 +1,256 @@
+2024-02-19 14:11:21,147 INFO c.m.u.Log [main] Test Suit Execution Started
+2024-02-19 14:11:21,202 INFO c.m.u.Log [main] Test Suit Execution Ended
+2024-02-19 14:14:03,621 INFO c.m.u.Log [main] Test Suit Execution Started
+2024-02-19 14:14:03,647 INFO c.m.u.Log [main] beforeClass Started on Browser -firefox
+2024-02-19 14:14:03,647 INFO c.m.u.Log [main] BaseClass - setupDriver() initiated
+2024-02-19 14:14:03,647 INFO c.m.u.Log [main] BaseClass - loadProperties() initiated
+2024-02-19 14:14:10,463 INFO c.m.u.Log [main] DriverManager - setDriver() - Firefox driver is setup
+2024-02-19 14:14:10,464 INFO c.m.u.Log [main] BaseClass - launchWebsite() initiated
+2024-02-19 14:14:14,295 INFO c.m.u.Log [main] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyHomePageTitle
+2024-02-19 14:14:14,305 INFO c.m.u.Log [main] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyHomePageTitle
+2024-02-19 14:14:14,308 INFO c.m.u.Log [main] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifySignInBtnIsVisible
+2024-02-19 14:14:14,359 INFO c.m.u.Log [main] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifySignInBtnIsVisible
+2024-02-19 14:14:14,361 INFO c.m.u.Log [main] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyMainMenuOptions
+2024-02-19 14:14:14,430 INFO c.m.u.Log [main] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyMainMenuOptions
+2024-02-19 14:14:15,474 INFO c.m.u.Log [main] DriverManager - unload() - Driver has been unload
+2024-02-19 14:14:15,477 INFO c.m.u.Log [main] Test Suit Execution Ended
+2024-02-19 20:04:50,515 INFO c.m.u.Log [main] Test Suit Execution Started
+2024-02-19 20:04:50,541 INFO c.m.u.Log [main] beforeClass Started on Browser -firefox
+2024-02-19 20:04:50,541 INFO c.m.u.Log [main] BaseClass - setupDriver() initiated
+2024-02-19 20:04:50,541 INFO c.m.u.Log [main] BaseClass - loadProperties() initiated
+2024-02-19 20:04:58,881 INFO c.m.u.Log [main] DriverManager - setDriver() - Firefox driver is setup
+2024-02-19 20:04:58,882 INFO c.m.u.Log [main] BaseClass - launchWebsite() initiated
+2024-02-19 20:05:03,260 INFO c.m.u.Log [main] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyHomePageTitle
+2024-02-19 20:05:03,290 INFO c.m.u.Log [main] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyHomePageTitle
+2024-02-19 20:05:04,988 INFO c.m.u.Log [main] DriverManager - unload() - Driver has been unload
+2024-02-19 20:05:04,992 INFO c.m.u.Log [main] Test Suit Execution Ended
+2024-02-19 20:08:47,440 INFO c.m.u.Log [main] Test Suit Execution Started
+2024-02-19 20:08:47,466 INFO c.m.u.Log [main] beforeClass Started on Browser -firefox
+2024-02-19 20:08:47,466 INFO c.m.u.Log [main] BaseClass - setupDriver() initiated
+2024-02-19 20:08:47,466 INFO c.m.u.Log [main] BaseClass - loadProperties() initiated
+2024-02-19 20:08:53,823 INFO c.m.u.Log [main] DriverManager - setDriver() - Firefox driver is setup
+2024-02-19 20:08:53,824 INFO c.m.u.Log [main] BaseClass - launchWebsite() initiated
+2024-02-19 20:08:57,885 INFO c.m.u.Log [main] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyHomePageTitle
+2024-02-19 20:08:57,918 INFO c.m.u.Log [main] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyHomePageTitle
+2024-02-19 20:09:00,353 INFO c.m.u.Log [main] DriverManager - unload() - Driver has been unload
+2024-02-19 20:09:00,359 INFO c.m.u.Log [main] Test Suit Execution Ended
+2024-02-19 21:30:36,011 INFO c.m.u.Log [main] Test Suit Execution Started
+2024-02-19 21:30:36,035 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] beforeClass Started on Browser -chrome
+2024-02-19 21:30:36,036 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] BaseClass - setupDriver() initiated
+2024-02-19 21:30:36,036 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] BaseClass - loadProperties() initiated
+2024-02-19 21:30:40,730 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] DriverManager - setDriver() - Chrome driver is setup
+2024-02-19 21:30:40,730 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] BaseClass - launchWebsite() initiated
+2024-02-19 21:30:44,598 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyHomePageTitle
+2024-02-19 21:30:44,616 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyHomePageTitle
+2024-02-19 21:30:44,617 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifySignInBtnIsVisible
+2024-02-19 21:30:44,675 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifySignInBtnIsVisible
+2024-02-19 21:30:44,676 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyMainMenuOptions
+2024-02-19 21:30:44,791 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyMainMenuOptions
+2024-02-19 21:30:45,150 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] DriverManager - unload() - Driver has been unload
+2024-02-19 21:30:45,174 INFO c.m.u.Log [main] Test Suit Execution Ended
+2024-02-19 21:32:18,346 INFO c.m.u.Log [main] Test Suit Execution Started
+2024-02-19 21:32:18,372 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] beforeClass Started on Browser -chrome
+2024-02-19 21:32:18,373 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] beforeClass Started on Browser -chrome
+2024-02-19 21:32:18,373 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] BaseClass - setupDriver() initiated
+2024-02-19 21:32:18,373 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] beforeClass Started on Browser -chrome
+2024-02-19 21:32:18,373 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] BaseClass - setupDriver() initiated
+2024-02-19 21:32:18,373 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] BaseClass - setupDriver() initiated
+2024-02-19 21:32:18,373 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] BaseClass - loadProperties() initiated
+2024-02-19 21:32:18,373 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] BaseClass - loadProperties() initiated
+2024-02-19 21:32:18,373 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] BaseClass - loadProperties() initiated
+2024-02-19 21:32:21,888 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] DriverManager - setDriver() - Chrome driver is setup
+2024-02-19 21:32:21,888 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] BaseClass - launchWebsite() initiated
+2024-02-19 21:32:21,888 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] DriverManager - setDriver() - Chrome driver is setup
+2024-02-19 21:32:21,888 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] BaseClass - launchWebsite() initiated
+2024-02-19 21:32:22,246 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] DriverManager - setDriver() - Chrome driver is setup
+2024-02-19 21:32:22,246 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] BaseClass - launchWebsite() initiated
+2024-02-19 21:32:27,013 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - hoverOnMenuAndSelectMenu
+2024-02-19 21:32:27,048 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifySignInBtnIsVisible
+2024-02-19 21:32:27,102 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifySignInBtnIsVisible
+2024-02-19 21:32:27,109 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifySignInBtnIsClickable
+2024-02-19 21:32:27,148 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyHomePageTitle
+2024-02-19 21:32:27,165 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyHomePageTitle
+2024-02-19 21:32:27,167 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifySignInBtnIsVisible
+2024-02-19 21:32:27,183 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifySignInBtnIsClickable
+2024-02-19 21:32:27,186 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyUserTapOnSignInBtn
+2024-02-19 21:32:27,224 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifySignInBtnIsVisible
+2024-02-19 21:32:27,227 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyMainMenuOptions
+2024-02-19 21:32:27,322 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyMainMenuOptions
+2024-02-19 21:32:27,582 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] DriverManager - unload() - Driver has been unload
+2024-02-19 21:32:28,124 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyUserTapOnSignInBtn
+2024-02-19 21:32:28,980 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - hoverOnMenuAndSelectMenu
+2024-02-19 21:32:28,981 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - verifyPageBreadCrumb
+2024-02-19 21:32:29,128 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - verifyPageBreadCrumb
+2024-02-19 21:32:29,131 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - selectSortOptionByText
+2024-02-19 21:32:29,209 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyInvalidUserLogin
+2024-02-19 21:32:30,337 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyInvalidUserLogin
+2024-02-19 21:32:30,340 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyInvalidUserLogin
+2024-02-19 21:32:30,350 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - selectSortOptionByText
+2024-02-19 21:32:30,351 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - scrollPageTillSortByOption
+2024-02-19 21:32:30,382 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - scrollPageTillSortByOption
+2024-02-19 21:32:30,383 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - verifyProductOrderBy
+2024-02-19 21:32:30,624 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - verifyProductOrderBy
+2024-02-19 21:32:30,873 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] DriverManager - unload() - Driver has been unload
+2024-02-19 21:32:31,188 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyInvalidUserLogin
+2024-02-19 21:32:31,189 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyValidUserLogin
+2024-02-19 21:32:32,144 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyValidUserLogin
+2024-02-19 21:32:32,145 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyUserSignOut
+2024-02-19 21:32:32,927 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyUserSignOut
+2024-02-19 21:32:33,121 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] DriverManager - unload() - Driver has been unload
+2024-02-19 21:32:33,158 INFO c.m.u.Log [main] Test Suit Execution Ended
+2024-02-19 22:20:25,883 INFO c.m.u.Log [main] Test Suit Execution Started
+2024-02-19 22:20:25,912 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] beforeClass Started on Browser -chrome
+2024-02-19 22:20:25,913 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] BaseClass - setupDriver() initiated
+2024-02-19 22:20:25,913 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] BaseClass - loadProperties() initiated
+2024-02-19 22:20:29,941 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] DriverManager - setDriver() - Chrome driver is setup
+2024-02-19 22:20:29,941 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] BaseClass - launchWebsite() initiated
+2024-02-19 22:20:33,924 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyHomePageTitle
+2024-02-19 22:20:33,972 INFO c.m.u.Log [main] Test Suit Execution Ended
+2024-02-19 22:26:44,813 INFO c.m.u.Log [main] Test Suit Execution Started
+2024-02-19 22:26:45,275 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] beforeClass Started on Browser -chrome
+2024-02-19 22:26:45,276 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] BaseClass - setupDriver() initiated
+2024-02-19 22:26:45,276 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] BaseClass - loadProperties() initiated
+2024-02-19 22:26:47,925 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] DriverManager - setDriver() - Chrome driver is setup
+2024-02-19 22:26:47,925 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] BaseClass - launchWebsite() initiated
+2024-02-19 22:26:51,929 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyHomePageTitle
+2024-02-19 22:26:51,967 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyHomePageTitle
+2024-02-19 22:26:51,969 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifySignInBtnIsVisible
+2024-02-19 22:26:52,025 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifySignInBtnIsVisible
+2024-02-19 22:26:52,026 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyMainMenuOptions
+2024-02-19 22:26:52,137 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyMainMenuOptions
+2024-02-19 22:26:52,139 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - failedTestCase
+2024-02-19 22:26:52,150 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - failedTestCase
+2024-02-19 22:26:52,151 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - skippedTestCase
+2024-02-19 22:26:52,157 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - skippedTestCase
+2024-02-19 22:26:52,408 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] DriverManager - unload() - Driver has been unload
+2024-02-19 22:26:53,398 INFO c.m.u.Log [main] Test Suit Execution Ended
+2024-02-19 22:40:31,878 INFO c.m.u.Log [main] Test Suit Execution Started
+2024-02-19 22:40:32,249 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] beforeClass Started on Browser -chrome
+2024-02-19 22:40:32,249 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] BaseClass - setupDriver() initiated
+2024-02-19 22:40:32,249 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] BaseClass - loadProperties() initiated
+2024-02-19 22:40:35,089 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] DriverManager - setDriver() - Chrome driver is setup
+2024-02-19 22:40:35,089 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] BaseClass - launchWebsite() initiated
+2024-02-19 22:40:39,067 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyHomePageTitle
+2024-02-19 22:40:39,105 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyHomePageTitle
+2024-02-19 22:40:39,107 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifySignInBtnIsVisible
+2024-02-19 22:40:39,158 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifySignInBtnIsVisible
+2024-02-19 22:40:39,160 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyMainMenuOptions
+2024-02-19 22:40:39,241 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyMainMenuOptions
+2024-02-19 22:40:39,243 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - failedTestCase
+2024-02-19 22:40:39,255 ERROR c.m.u.Log [TestNG-test=Chrome-Test-1] failedTestCase - Failed -expected [true] but found [false]
+2024-02-19 22:40:39,257 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - failedTestCase
+2024-02-19 22:40:39,260 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - skippedTestCase
+2024-02-19 22:40:39,270 ERROR c.m.u.Log [TestNG-test=Chrome-Test-1] skippedTestCase - Skipped -this is skipped test case
+2024-02-19 22:40:39,271 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - skippedTestCase
+2024-02-19 22:40:39,494 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] DriverManager - unload() - Driver has been unload
+2024-02-19 22:40:40,228 INFO c.m.u.Log [main] Test Suit Execution Ended
+2024-02-19 22:44:00,931 INFO c.m.u.Log [main] Test Suit Execution Started
+2024-02-19 22:44:01,427 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] beforeClass Started on Browser -chrome
+2024-02-19 22:44:01,427 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] BaseClass - setupDriver() initiated
+2024-02-19 22:44:01,428 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] BaseClass - loadProperties() initiated
+2024-02-19 22:44:01,428 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] beforeClass Started on Browser -chrome
+2024-02-19 22:44:01,428 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] BaseClass - setupDriver() initiated
+2024-02-19 22:44:01,428 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] BaseClass - loadProperties() initiated
+2024-02-19 22:44:01,428 INFO c.m.u.Log [TestNG-test=Firefox-Test-2] beforeClass Started on Browser -firefox
+2024-02-19 22:44:01,428 INFO c.m.u.Log [TestNG-test=Firefox-Test-2] BaseClass - setupDriver() initiated
+2024-02-19 22:44:01,428 INFO c.m.u.Log [TestNG-test=Firefox-Test-2] BaseClass - loadProperties() initiated
+2024-02-19 22:44:01,427 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] beforeClass Started on Browser -chrome
+2024-02-19 22:44:01,429 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] BaseClass - setupDriver() initiated
+2024-02-19 22:44:01,426 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] beforeClass Started on Browser -firefox
+2024-02-19 22:44:01,429 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] BaseClass - loadProperties() initiated
+2024-02-19 22:44:01,429 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] BaseClass - setupDriver() initiated
+2024-02-19 22:44:01,431 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] BaseClass - loadProperties() initiated
+2024-02-19 22:44:05,281 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] DriverManager - setDriver() - Chrome driver is setup
+2024-02-19 22:44:05,281 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] BaseClass - launchWebsite() initiated
+2024-02-19 22:44:05,359 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] DriverManager - setDriver() - Chrome driver is setup
+2024-02-19 22:44:05,359 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] BaseClass - launchWebsite() initiated
+2024-02-19 22:44:05,862 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] DriverManager - setDriver() - Chrome driver is setup
+2024-02-19 22:44:05,862 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] BaseClass - launchWebsite() initiated
+2024-02-19 22:44:11,643 INFO c.m.u.Log [TestNG-test=Firefox-Test-2] DriverManager - setDriver() - Firefox driver is setup
+2024-02-19 22:44:11,643 INFO c.m.u.Log [TestNG-test=Firefox-Test-2] BaseClass - launchWebsite() initiated
+2024-02-19 22:44:12,364 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifySignInBtnIsVisible
+2024-02-19 22:44:12,607 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifySignInBtnIsVisible
+2024-02-19 22:44:12,610 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifySignInBtnIsClickable
+2024-02-19 22:44:12,807 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - hoverOnMenuAndSelectMenu
+2024-02-19 22:44:13,179 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] DriverManager - setDriver() - Firefox driver is setup
+2024-02-19 22:44:13,180 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] BaseClass - launchWebsite() initiated
+2024-02-19 22:44:13,300 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyHomePageTitle
+2024-02-19 22:44:13,327 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyHomePageTitle
+2024-02-19 22:44:13,328 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifySignInBtnIsClickable
+2024-02-19 22:44:13,329 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifySignInBtnIsVisible
+2024-02-19 22:44:13,330 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyUserTapOnSignInBtn
+2024-02-19 22:44:13,478 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifySignInBtnIsVisible
+2024-02-19 22:44:13,480 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyMainMenuOptions
+2024-02-19 22:44:14,178 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyMainMenuOptions
+2024-02-19 22:44:14,180 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - failedTestCase
+2024-02-19 22:44:14,209 ERROR c.m.u.Log [TestNG-test=Chrome-Test-1] failedTestCase - Failed -expected [true] but found [false]
+2024-02-19 22:44:14,210 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - failedTestCase
+2024-02-19 22:44:14,212 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - skippedTestCase
+2024-02-19 22:44:14,215 ERROR c.m.u.Log [TestNG-test=Chrome-Test-1] skippedTestCase - Skipped -this is skipped test case
+2024-02-19 22:44:14,224 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - skippedTestCase
+2024-02-19 22:44:15,244 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyUserTapOnSignInBtn
+2024-02-19 22:44:16,326 INFO c.m.u.Log [TestNG-test=Firefox-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - hoverOnMenuAndSelectMenu
+2024-02-19 22:44:16,414 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - hoverOnMenuAndSelectMenu
+2024-02-19 22:44:16,419 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - verifyPageBreadCrumb
+2024-02-19 22:44:16,782 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - verifyPageBreadCrumb
+2024-02-19 22:44:16,789 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - selectSortOptionByText
+2024-02-19 22:44:16,832 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] DriverManager - unload() - Driver has been unload
+2024-02-19 22:44:16,863 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyHomePageTitle
+2024-02-19 22:44:16,888 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyHomePageTitle
+2024-02-19 22:44:16,889 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifySignInBtnIsVisible
+2024-02-19 22:44:16,972 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifySignInBtnIsVisible
+2024-02-19 22:44:16,974 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyMainMenuOptions
+2024-02-19 22:44:17,141 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyMainMenuOptions
+2024-02-19 22:44:17,143 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - failedTestCase
+2024-02-19 22:44:17,145 ERROR c.m.u.Log [TestNG-test=Firefox-Test-1] failedTestCase - Failed -expected [true] but found [false]
+2024-02-19 22:44:17,146 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - failedTestCase
+2024-02-19 22:44:17,148 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - skippedTestCase
+2024-02-19 22:44:17,149 ERROR c.m.u.Log [TestNG-test=Firefox-Test-1] skippedTestCase - Skipped -this is skipped test case
+2024-02-19 22:44:17,149 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - skippedTestCase
+2024-02-19 22:44:18,204 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyInvalidUserLogin
+2024-02-19 22:44:18,232 INFO c.m.u.Log [TestNG-test=Firefox-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - hoverOnMenuAndSelectMenu
+2024-02-19 22:44:18,234 INFO c.m.u.Log [TestNG-test=Firefox-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - verifyPageBreadCrumb
+2024-02-19 22:44:18,365 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - selectSortOptionByText
+2024-02-19 22:44:18,368 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - scrollPageTillSortByOption
+2024-02-19 22:44:18,459 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - scrollPageTillSortByOption
+2024-02-19 22:44:18,460 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - verifyProductOrderBy
+2024-02-19 22:44:18,755 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - verifyProductOrderBy
+2024-02-19 22:44:19,417 INFO c.m.u.Log [TestNG-test=Chrome-Test-2] DriverManager - unload() - Driver has been unload
+2024-02-19 22:44:19,671 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] DriverManager - unload() - Driver has been unload
+2024-02-19 22:44:19,673 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] beforeClass Started on Browser -firefox
+2024-02-19 22:44:19,673 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] BaseClass - setupDriver() initiated
+2024-02-19 22:44:19,673 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] BaseClass - loadProperties() initiated
+2024-02-19 22:44:20,118 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyInvalidUserLogin
+2024-02-19 22:44:20,119 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyInvalidUserLogin
+2024-02-19 22:44:21,066 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyInvalidUserLogin
+2024-02-19 22:44:21,068 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyValidUserLogin
+2024-02-19 22:44:22,425 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyValidUserLogin
+2024-02-19 22:44:22,426 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyUserSignOut
+2024-02-19 22:44:23,634 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyUserSignOut
+2024-02-19 22:44:23,989 INFO c.m.u.Log [TestNG-test=Chrome-Test-3] DriverManager - unload() - Driver has been unload
+2024-02-19 22:44:25,404 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] DriverManager - setDriver() - Firefox driver is setup
+2024-02-19 22:44:25,404 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] BaseClass - launchWebsite() initiated
+2024-02-19 22:44:28,452 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifySignInBtnIsVisible
+2024-02-19 22:44:28,480 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifySignInBtnIsVisible
+2024-02-19 22:44:28,481 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifySignInBtnIsClickable
+2024-02-19 22:44:28,526 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifySignInBtnIsClickable
+2024-02-19 22:44:28,527 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyUserTapOnSignInBtn
+2024-02-19 22:44:29,260 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyUserTapOnSignInBtn
+2024-02-19 22:44:29,301 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyInvalidUserLogin
+2024-02-19 22:44:29,904 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyInvalidUserLogin
+2024-02-19 22:44:29,904 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyInvalidUserLogin
+2024-02-19 22:44:30,591 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyInvalidUserLogin
+2024-02-19 22:44:30,592 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyValidUserLogin
+2024-02-19 22:44:31,480 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyValidUserLogin
+2024-02-19 22:44:31,481 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyUserSignOut
+2024-02-19 22:44:32,309 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] com.myframework.testcases.signin_singup.VerifyUserSingIn Test cases Started - verifyUserSignOut
+2024-02-19 22:44:33,337 INFO c.m.u.Log [TestNG-test=Firefox-Test-1] DriverManager - unload() - Driver has been unload
+2024-02-19 22:44:33,356 INFO c.m.u.Log [TestNG-test=Firefox-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - verifyPageBreadCrumb
+2024-02-19 22:44:33,356 INFO c.m.u.Log [TestNG-test=Firefox-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - selectSortOptionByText
+2024-02-19 22:44:34,435 INFO c.m.u.Log [TestNG-test=Firefox-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - selectSortOptionByText
+2024-02-19 22:44:34,436 INFO c.m.u.Log [TestNG-test=Firefox-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - scrollPageTillSortByOption
+2024-02-19 22:44:34,446 INFO c.m.u.Log [TestNG-test=Firefox-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - scrollPageTillSortByOption
+2024-02-19 22:44:34,447 INFO c.m.u.Log [TestNG-test=Firefox-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - verifyProductOrderBy
+2024-02-19 22:44:34,517 INFO c.m.u.Log [TestNG-test=Firefox-Test-2] com.myframework.testcases.product.verifySortByOnProduct Test cases Started - verifyProductOrderBy
+2024-02-19 22:44:35,433 INFO c.m.u.Log [TestNG-test=Firefox-Test-2] DriverManager - unload() - Driver has been unload
+2024-02-19 22:44:35,539 INFO c.m.u.Log [main] Test Suit Execution Ended

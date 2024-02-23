@@ -21,6 +21,8 @@ import java.util.List;
 
 public class TestClass {
 
+    ArrayList<ArrayList<String>> masterData;
+
     public ExtentReports extent;
     public ExtentSparkReporter spark;
 
