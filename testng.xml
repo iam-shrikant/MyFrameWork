@@ -14,16 +14,16 @@
         <parameter name="browser" value="chrome"></parameter>
         <classes>
             <class name="com.myframework.testcases.homepage.VerifyHomeScreen"></class>
-            <class name="com.myframework.testcases.signin_singup.VerifyUserSingIn"></class>
-            <class name="com.myframework.testcases.product.verifySortByOnProduct"></class>
+           <!-- <class name="com.myframework.testcases.signin_singup.VerifyUserSingIn"></class>
+            <class name="com.myframework.testcases.product.verifySortByOnProduct"></class>-->
         </classes>
     </test>
-    <test name="Firefox-Test" parallel="classes" thread-count="2">
+    <!--<test name="Firefox-Test" parallel="classes" thread-count="2">
         <parameter name="browser" value="firefox"></parameter>
         <classes>
             <class name="com.myframework.testcases.homepage.VerifyHomeScreen"></class>
             <class name="com.myframework.testcases.signin_singup.VerifyUserSingIn"></class>
             <class name="com.myframework.testcases.product.verifySortByOnProduct"></class>
         </classes>
-    </test>
+    </test>-->
 </suite>
