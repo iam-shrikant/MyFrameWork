@@ -1,985 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="38" passed="30" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-22T14:28:27 IST" name="All Test Suite" finished-at="2024-02-22T14:29:05 IST" duration-ms="37947">
+  <suite started-at="2024-02-25T22:11:26 IST" name="All Test Suite" finished-at="2024-02-25T22:11:33 IST" duration-ms="7414">
     <groups>
       <group name="smoke">
-        <method signature="VerifyHomeScreen.verifyHomePageTitle()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@68e965f5]" name="verifyHomePageTitle" class="com.myframework.testcases.homepage.VerifyHomeScreen"/>
-        <method signature="VerifyUserSingIn.verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" name="verifySignInBtnIsVisible" class="com.myframework.testcases.signin_singup.VerifyUserSingIn"/>
-        <method signature="verifySortByOnProduct.hoverOnMenuAndSelectMenu()[pri:1, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568]" name="hoverOnMenuAndSelectMenu" class="com.myframework.testcases.product.verifySortByOnProduct"/>
-        <method signature="verifySortByOnProduct.verifyPageBreadCrumb()[pri:2, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568]" name="verifyPageBreadCrumb" class="com.myframework.testcases.product.verifySortByOnProduct"/>
-        <method signature="VerifyHomeScreen.verifyHomePageTitle()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@19d481b]" name="verifyHomePageTitle" class="com.myframework.testcases.homepage.VerifyHomeScreen"/>
-        <method signature="VerifyUserSingIn.verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" name="verifySignInBtnIsVisible" class="com.myframework.testcases.signin_singup.VerifyUserSingIn"/>
-        <method signature="verifySortByOnProduct.hoverOnMenuAndSelectMenu()[pri:1, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39]" name="hoverOnMenuAndSelectMenu" class="com.myframework.testcases.product.verifySortByOnProduct"/>
-        <method signature="verifySortByOnProduct.verifyPageBreadCrumb()[pri:2, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39]" name="verifyPageBreadCrumb" class="com.myframework.testcases.product.verifySortByOnProduct"/>
+        <method signature="VerifyHomeScreen.verifyHomePageTitle()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@11c9af63]" name="verifyHomePageTitle" class="com.myframework.testcases.homepage.VerifyHomeScreen"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-02-22T14:28:27 IST" name="Chrome-Test" finished-at="2024-02-22T14:28:55 IST" duration-ms="27778">
-      <class name="com.myframework.testcases.signin_singup.VerifyUserSingIn">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:27 IST" name="beforeClass" finished-at="2024-02-22T14:28:44 IST" duration-ms="16525" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:44 IST" name="beforeMethod" finished-at="2024-02-22T14:28:44 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=VerifyUserSingIn.verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:44 IST" name="verifySignInBtnIsVisible" finished-at="2024-02-22T14:28:45 IST" duration-ms="1003" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySignInBtnIsVisible -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:45 IST" name="afterMethod" finished-at="2024-02-22T14:28:45 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySignInBtnIsVisible status=SUCCESS method=VerifyUserSingIn.verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="verifySignInBtnIsClickable()[pri:2, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:45 IST" name="verifySignInBtnIsClickable" finished-at="2024-02-22T14:28:45 IST" duration-ms="195" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySignInBtnIsClickable -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:45 IST" name="beforeMethod" finished-at="2024-02-22T14:28:45 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=VerifyUserSingIn.verifySignInBtnIsClickable()[pri:2, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:45 IST" name="afterMethod" finished-at="2024-02-22T14:28:45 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySignInBtnIsClickable status=SUCCESS method=VerifyUserSingIn.verifySignInBtnIsClickable()[pri:2, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:45 IST" name="beforeMethod" finished-at="2024-02-22T14:28:45 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=VerifyUserSingIn.verifyUserTapOnSignInBtn()[pri:3, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyUserTapOnSignInBtn()[pri:3, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:45 IST" name="verifyUserTapOnSignInBtn" finished-at="2024-02-22T14:28:47 IST" duration-ms="2114" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserTapOnSignInBtn -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:47 IST" name="afterMethod" finished-at="2024-02-22T14:28:47 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserTapOnSignInBtn status=SUCCESS method=VerifyUserSingIn.verifyUserTapOnSignInBtn()[pri:3, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:49 IST" name="beforeMethod" finished-at="2024-02-22T14:28:49 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=VerifyUserSingIn.verifyInvalidUserLogin(java.lang.String, java.lang.String)[pri:4, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyInvalidUserLogin(java.lang.String, java.lang.String)[pri:4, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:49 IST" name="verifyInvalidUserLogin" data-provider="invalidLoginData" finished-at="2024-02-22T14:28:50 IST" duration-ms="1442" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test@testqa.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Testing@12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInvalidUserLogin -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:50 IST" name="afterMethod" finished-at="2024-02-22T14:28:50 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyInvalidUserLogin status=SUCCESS method=VerifyUserSingIn.verifyInvalidUserLogin(java.lang.String, java.lang.String)[pri:4, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="verifyInvalidUserLogin(java.lang.String, java.lang.String)[pri:4, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:50 IST" name="verifyInvalidUserLogin" data-provider="invalidLoginData" finished-at="2024-02-22T14:28:51 IST" duration-ms="1516" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test124@testqa.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Testing@1222345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInvalidUserLogin -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:50 IST" name="beforeMethod" finished-at="2024-02-22T14:28:50 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=VerifyUserSingIn.verifyInvalidUserLogin(java.lang.String, java.lang.String)[pri:4, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:51 IST" name="afterMethod" finished-at="2024-02-22T14:28:51 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyInvalidUserLogin status=SUCCESS method=VerifyUserSingIn.verifyInvalidUserLogin(java.lang.String, java.lang.String)[pri:4, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="verifyValidUserLogin(java.lang.String, java.lang.String)[pri:5, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:51 IST" name="verifyValidUserLogin" data-provider="validLoginData" finished-at="2024-02-22T14:28:53 IST" duration-ms="1569" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test@testqa.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Testing@1234]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyValidUserLogin -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:51 IST" name="beforeMethod" finished-at="2024-02-22T14:28:51 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=VerifyUserSingIn.verifyValidUserLogin(java.lang.String, java.lang.String)[pri:5, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:53 IST" name="afterMethod" finished-at="2024-02-22T14:28:53 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyValidUserLogin status=SUCCESS method=VerifyUserSingIn.verifyValidUserLogin(java.lang.String, java.lang.String)[pri:5, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:53 IST" name="beforeMethod" finished-at="2024-02-22T14:28:53 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=VerifyUserSingIn.verifyUserSignOut()[pri:6, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyUserSignOut()[pri:6, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:53 IST" name="verifyUserSignOut" finished-at="2024-02-22T14:28:54 IST" duration-ms="1281" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserSignOut -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:54 IST" name="afterClass" finished-at="2024-02-22T14:28:55 IST" duration-ms="397" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732]" started-at="2024-02-22T14:28:54 IST" name="afterMethod" finished-at="2024-02-22T14:28:54 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserSignOut status=SUCCESS method=VerifyUserSingIn.verifyUserSignOut()[pri:6, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@6f27a732] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.myframework.testcases.signin_singup.VerifyUserSingIn -->
-      <class name="com.myframework.testcases.product.verifySortByOnProduct">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568]" started-at="2024-02-22T14:28:27 IST" name="beforeClass" finished-at="2024-02-22T14:28:44 IST" duration-ms="17242" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568]" started-at="2024-02-22T14:28:44 IST" name="beforeMethod" finished-at="2024-02-22T14:28:44 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=verifySortByOnProduct.hoverOnMenuAndSelectMenu()[pri:1, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="hoverOnMenuAndSelectMenu()[pri:1, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568]" started-at="2024-02-22T14:28:44 IST" name="hoverOnMenuAndSelectMenu" finished-at="2024-02-22T14:28:49 IST" duration-ms="5173" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hoverOnMenuAndSelectMenu -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568]" started-at="2024-02-22T14:28:49 IST" name="afterMethod" finished-at="2024-02-22T14:28:49 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=hoverOnMenuAndSelectMenu status=SUCCESS method=verifySortByOnProduct.hoverOnMenuAndSelectMenu()[pri:1, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568]" started-at="2024-02-22T14:28:49 IST" name="beforeMethod" finished-at="2024-02-22T14:28:49 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=verifySortByOnProduct.verifyPageBreadCrumb()[pri:2, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyPageBreadCrumb()[pri:2, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568]" started-at="2024-02-22T14:28:49 IST" name="verifyPageBreadCrumb" finished-at="2024-02-22T14:28:50 IST" duration-ms="128" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPageBreadCrumb -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568]" started-at="2024-02-22T14:28:50 IST" name="beforeMethod" finished-at="2024-02-22T14:28:50 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=verifySortByOnProduct.selectSortOptionByText()[pri:3, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568]" started-at="2024-02-22T14:28:50 IST" name="afterMethod" finished-at="2024-02-22T14:28:50 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyPageBreadCrumb status=SUCCESS method=verifySortByOnProduct.verifyPageBreadCrumb()[pri:2, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="selectSortOptionByText()[pri:3, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568]" started-at="2024-02-22T14:28:50 IST" name="selectSortOptionByText" finished-at="2024-02-22T14:28:51 IST" duration-ms="1265" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectSortOptionByText -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568]" started-at="2024-02-22T14:28:51 IST" name="afterMethod" finished-at="2024-02-22T14:28:51 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=selectSortOptionByText status=SUCCESS method=verifySortByOnProduct.selectSortOptionByText()[pri:3, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="scrollPageTillSortByOption()[pri:4, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568]" started-at="2024-02-22T14:28:51 IST" name="scrollPageTillSortByOption" finished-at="2024-02-22T14:28:51 IST" duration-ms="70" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scrollPageTillSortByOption -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568]" started-at="2024-02-22T14:28:51 IST" name="beforeMethod" finished-at="2024-02-22T14:28:51 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=verifySortByOnProduct.scrollPageTillSortByOption()[pri:4, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568]" started-at="2024-02-22T14:28:51 IST" name="afterMethod" finished-at="2024-02-22T14:28:51 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=scrollPageTillSortByOption status=SUCCESS method=verifySortByOnProduct.scrollPageTillSortByOption()[pri:4, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568]" started-at="2024-02-22T14:28:51 IST" name="beforeMethod" finished-at="2024-02-22T14:28:51 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=verifySortByOnProduct.verifyProductOrderBy()[pri:5, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyProductOrderBy()[pri:5, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568]" started-at="2024-02-22T14:28:51 IST" name="verifyProductOrderBy" finished-at="2024-02-22T14:28:51 IST" duration-ms="260" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductOrderBy -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568]" started-at="2024-02-22T14:28:51 IST" name="afterMethod" finished-at="2024-02-22T14:28:51 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyProductOrderBy status=SUCCESS method=verifySortByOnProduct.verifyProductOrderBy()[pri:5, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@6c779568]" started-at="2024-02-22T14:28:51 IST" name="afterClass" finished-at="2024-02-22T14:28:52 IST" duration-ms="908" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.myframework.testcases.product.verifySortByOnProduct -->
+    <test started-at="2024-02-25T22:11:26 IST" name="Chrome-Test" finished-at="2024-02-25T22:11:33 IST" duration-ms="7414">
       <class name="com.myframework.testcases.homepage.VerifyHomeScreen">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@68e965f5]" started-at="2024-02-22T14:28:27 IST" name="beforeClass" finished-at="2024-02-22T14:28:45 IST" duration-ms="17819" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@68e965f5]" started-at="2024-02-22T14:28:45 IST" name="beforeMethod" finished-at="2024-02-22T14:28:45 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=VerifyHomeScreen.verifyHomePageTitle()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@68e965f5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyHomePageTitle()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@68e965f5]" started-at="2024-02-22T14:28:45 IST" name="verifyHomePageTitle" finished-at="2024-02-22T14:28:45 IST" duration-ms="49" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyHomePageTitle -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@68e965f5]" started-at="2024-02-22T14:28:45 IST" name="afterMethod" finished-at="2024-02-22T14:28:45 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyHomePageTitle status=SUCCESS method=VerifyHomeScreen.verifyHomePageTitle()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@68e965f5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@68e965f5]" started-at="2024-02-22T14:28:45 IST" name="beforeMethod" finished-at="2024-02-22T14:28:45 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=VerifyHomeScreen.verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.homepage.VerifyHomeScreen@68e965f5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.homepage.VerifyHomeScreen@68e965f5]" started-at="2024-02-22T14:28:45 IST" name="verifySignInBtnIsVisible" finished-at="2024-02-22T14:28:45 IST" duration-ms="64" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySignInBtnIsVisible -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@68e965f5]" started-at="2024-02-22T14:28:45 IST" name="afterMethod" finished-at="2024-02-22T14:28:45 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySignInBtnIsVisible status=SUCCESS method=VerifyHomeScreen.verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.homepage.VerifyHomeScreen@68e965f5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@68e965f5]" started-at="2024-02-22T14:28:45 IST" name="beforeMethod" finished-at="2024-02-22T14:28:45 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=VerifyHomeScreen.verifyMainMenuOptions()[pri:2, instance:com.myframework.testcases.homepage.VerifyHomeScreen@68e965f5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyMainMenuOptions()[pri:2, instance:com.myframework.testcases.homepage.VerifyHomeScreen@68e965f5]" started-at="2024-02-22T14:28:45 IST" name="verifyMainMenuOptions" finished-at="2024-02-22T14:28:46 IST" duration-ms="976" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMainMenuOptions -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@68e965f5]" started-at="2024-02-22T14:28:46 IST" name="afterMethod" finished-at="2024-02-22T14:28:46 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyMainMenuOptions status=SUCCESS method=VerifyHomeScreen.verifyMainMenuOptions()[pri:2, instance:com.myframework.testcases.homepage.VerifyHomeScreen@68e965f5] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@68e965f5]" started-at="2024-02-22T14:28:46 IST" name="afterClass" finished-at="2024-02-22T14:28:48 IST" duration-ms="2112" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.myframework.testcases.homepage.VerifyHomeScreen -->
-    </test> <!-- Chrome-Test -->
-    <test started-at="2024-02-22T14:28:27 IST" name="Firefox-Test" finished-at="2024-02-22T14:29:05 IST" duration-ms="37947">
-      <class name="com.myframework.testcases.signin_singup.VerifyUserSingIn">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:28:48 IST" name="beforeClass" finished-at="2024-02-22T14:28:58 IST" duration-ms="10178" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:28:58 IST" name="beforeMethod" finished-at="2024-02-22T14:28:58 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=VerifyUserSingIn.verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:28:58 IST" name="verifySignInBtnIsVisible" finished-at="2024-02-22T14:28:58 IST" duration-ms="65" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySignInBtnIsVisible -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:28:58 IST" name="afterMethod" finished-at="2024-02-22T14:28:58 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySignInBtnIsVisible status=SUCCESS method=VerifyUserSingIn.verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="verifySignInBtnIsClickable()[pri:2, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:28:58 IST" name="verifySignInBtnIsClickable" finished-at="2024-02-22T14:28:58 IST" duration-ms="52" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySignInBtnIsClickable -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:28:58 IST" name="beforeMethod" finished-at="2024-02-22T14:28:58 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=VerifyUserSingIn.verifySignInBtnIsClickable()[pri:2, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:28:58 IST" name="afterMethod" finished-at="2024-02-22T14:28:58 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySignInBtnIsClickable status=SUCCESS method=VerifyUserSingIn.verifySignInBtnIsClickable()[pri:2, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="verifyUserTapOnSignInBtn()[pri:3, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:28:58 IST" name="verifyUserTapOnSignInBtn" finished-at="2024-02-22T14:29:00 IST" duration-ms="1071" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserTapOnSignInBtn -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:28:58 IST" name="beforeMethod" finished-at="2024-02-22T14:28:58 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=VerifyUserSingIn.verifyUserTapOnSignInBtn()[pri:3, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:29:00 IST" name="afterMethod" finished-at="2024-02-22T14:29:00 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserTapOnSignInBtn status=SUCCESS method=VerifyUserSingIn.verifyUserTapOnSignInBtn()[pri:3, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:29:00 IST" name="beforeMethod" finished-at="2024-02-22T14:29:00 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=VerifyUserSingIn.verifyInvalidUserLogin(java.lang.String, java.lang.String)[pri:4, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyInvalidUserLogin(java.lang.String, java.lang.String)[pri:4, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:29:00 IST" name="verifyInvalidUserLogin" data-provider="invalidLoginData" finished-at="2024-02-22T14:29:00 IST" duration-ms="684" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test@testqa.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Testing@12345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInvalidUserLogin -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:29:00 IST" name="afterMethod" finished-at="2024-02-22T14:29:00 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyInvalidUserLogin status=SUCCESS method=VerifyUserSingIn.verifyInvalidUserLogin(java.lang.String, java.lang.String)[pri:4, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:29:00 IST" name="beforeMethod" finished-at="2024-02-22T14:29:00 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=VerifyUserSingIn.verifyInvalidUserLogin(java.lang.String, java.lang.String)[pri:4, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyInvalidUserLogin(java.lang.String, java.lang.String)[pri:4, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:29:00 IST" name="verifyInvalidUserLogin" data-provider="invalidLoginData" finished-at="2024-02-22T14:29:01 IST" duration-ms="882" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test124@testqa.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Testing@1222345]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyInvalidUserLogin -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:29:01 IST" name="afterMethod" finished-at="2024-02-22T14:29:01 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyInvalidUserLogin status=SUCCESS method=VerifyUserSingIn.verifyInvalidUserLogin(java.lang.String, java.lang.String)[pri:4, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:29:01 IST" name="beforeMethod" finished-at="2024-02-22T14:29:01 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=VerifyUserSingIn.verifyValidUserLogin(java.lang.String, java.lang.String)[pri:5, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyValidUserLogin(java.lang.String, java.lang.String)[pri:5, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:29:01 IST" name="verifyValidUserLogin" data-provider="validLoginData" finished-at="2024-02-22T14:29:02 IST" duration-ms="1129" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test@testqa.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Testing@1234]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyValidUserLogin -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:29:02 IST" name="afterMethod" finished-at="2024-02-22T14:29:02 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyValidUserLogin status=SUCCESS method=VerifyUserSingIn.verifyValidUserLogin(java.lang.String, java.lang.String)[pri:5, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:29:02 IST" name="beforeMethod" finished-at="2024-02-22T14:29:02 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=VerifyUserSingIn.verifyUserSignOut()[pri:6, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyUserSignOut()[pri:6, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:29:02 IST" name="verifyUserSignOut" finished-at="2024-02-22T14:29:03 IST" duration-ms="917" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyUserSignOut -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:29:03 IST" name="afterMethod" finished-at="2024-02-22T14:29:03 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyUserSignOut status=SUCCESS method=VerifyUserSingIn.verifyUserSignOut()[pri:6, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.myframework.testcases.signin_singup.VerifyUserSingIn@1f97cf0d]" started-at="2024-02-22T14:29:03 IST" name="afterClass" finished-at="2024-02-22T14:29:05 IST" duration-ms="1721" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.myframework.testcases.signin_singup.VerifyUserSingIn -->
-      <class name="com.myframework.testcases.product.verifySortByOnProduct">
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39]" started-at="2024-02-22T14:28:27 IST" name="beforeClass" finished-at="2024-02-22T14:28:44 IST" duration-ms="16525" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39]" started-at="2024-02-22T14:28:44 IST" name="beforeMethod" finished-at="2024-02-22T14:28:44 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=verifySortByOnProduct.hoverOnMenuAndSelectMenu()[pri:1, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="hoverOnMenuAndSelectMenu()[pri:1, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39]" started-at="2024-02-22T14:28:44 IST" name="hoverOnMenuAndSelectMenu" finished-at="2024-02-22T14:28:45 IST" duration-ms="1753" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- hoverOnMenuAndSelectMenu -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39]" started-at="2024-02-22T14:28:45 IST" name="afterMethod" finished-at="2024-02-22T14:28:45 IST" duration-ms="10" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=hoverOnMenuAndSelectMenu status=SUCCESS method=verifySortByOnProduct.hoverOnMenuAndSelectMenu()[pri:1, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39]" started-at="2024-02-22T14:28:45 IST" name="beforeMethod" finished-at="2024-02-22T14:28:45 IST" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=verifySortByOnProduct.verifyPageBreadCrumb()[pri:2, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyPageBreadCrumb()[pri:2, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39]" started-at="2024-02-22T14:28:45 IST" name="verifyPageBreadCrumb" finished-at="2024-02-22T14:29:00 IST" duration-ms="15111" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPageBreadCrumb -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39]" started-at="2024-02-22T14:29:00 IST" name="beforeMethod" finished-at="2024-02-22T14:29:00 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=verifySortByOnProduct.selectSortOptionByText()[pri:3, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="selectSortOptionByText()[pri:3, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39]" started-at="2024-02-22T14:29:00 IST" name="selectSortOptionByText" finished-at="2024-02-22T14:29:01 IST" duration-ms="1069" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectSortOptionByText -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39]" started-at="2024-02-22T14:29:00 IST" name="afterMethod" finished-at="2024-02-22T14:29:00 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyPageBreadCrumb status=SUCCESS method=verifySortByOnProduct.verifyPageBreadCrumb()[pri:2, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39]" started-at="2024-02-22T14:29:01 IST" name="afterMethod" finished-at="2024-02-22T14:29:01 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=selectSortOptionByText status=SUCCESS method=verifySortByOnProduct.selectSortOptionByText()[pri:3, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39]" started-at="2024-02-22T14:29:01 IST" name="beforeMethod" finished-at="2024-02-22T14:29:01 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=verifySortByOnProduct.scrollPageTillSortByOption()[pri:4, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="scrollPageTillSortByOption()[pri:4, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39]" started-at="2024-02-22T14:29:01 IST" name="scrollPageTillSortByOption" finished-at="2024-02-22T14:29:02 IST" duration-ms="26" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- scrollPageTillSortByOption -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39]" started-at="2024-02-22T14:29:02 IST" name="beforeMethod" finished-at="2024-02-22T14:29:02 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=verifySortByOnProduct.verifyProductOrderBy()[pri:5, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39]" started-at="2024-02-22T14:29:02 IST" name="afterMethod" finished-at="2024-02-22T14:29:02 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=scrollPageTillSortByOption status=SUCCESS method=verifySortByOnProduct.scrollPageTillSortByOption()[pri:4, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="verifyProductOrderBy()[pri:5, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39]" started-at="2024-02-22T14:29:02 IST" name="verifyProductOrderBy" finished-at="2024-02-22T14:29:02 IST" duration-ms="109" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductOrderBy -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39]" started-at="2024-02-22T14:29:02 IST" name="afterMethod" finished-at="2024-02-22T14:29:02 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyProductOrderBy status=SUCCESS method=verifySortByOnProduct.verifyProductOrderBy()[pri:5, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.myframework.testcases.product.verifySortByOnProduct@140c9f39]" started-at="2024-02-22T14:29:02 IST" name="afterClass" finished-at="2024-02-22T14:29:03 IST" duration-ms="1325" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.myframework.testcases.product.verifySortByOnProduct -->
-      <class name="com.myframework.testcases.homepage.VerifyHomeScreen">
-        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@19d481b]" started-at="2024-02-22T14:28:26 IST" name="beforeSuit" finished-at="2024-02-22T14:28:27 IST" duration-ms="944" status="PASS">
+        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@11c9af63]" started-at="2024-02-25T22:11:25 IST" name="beforeSuit" finished-at="2024-02-25T22:11:26 IST" duration-ms="1020" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuit -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@19d481b]" started-at="2024-02-22T14:28:27 IST" name="beforeClass" finished-at="2024-02-22T14:28:44 IST" duration-ms="16527" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@11c9af63]" started-at="2024-02-25T22:11:26 IST" name="beforeClass" finished-at="2024-02-25T22:11:33 IST" duration-ms="6951" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@19d481b]" started-at="2024-02-22T14:28:44 IST" name="beforeMethod" finished-at="2024-02-22T14:28:44 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@11c9af63]" started-at="2024-02-25T22:11:33 IST" name="beforeMethod" finished-at="2024-02-25T22:11:33 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=VerifyHomeScreen.verifyHomePageTitle()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@19d481b] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=VerifyHomeScreen.verifyHomePageTitle()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@11c9af63] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyHomePageTitle()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@19d481b]" started-at="2024-02-22T14:28:44 IST" name="verifyHomePageTitle" finished-at="2024-02-22T14:28:44 IST" duration-ms="16" status="PASS">
+        <test-method signature="verifyHomePageTitle()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@11c9af63]" started-at="2024-02-25T22:11:33 IST" name="verifyHomePageTitle" finished-at="2024-02-25T22:11:33 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitle -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@19d481b]" started-at="2024-02-22T14:28:44 IST" name="afterMethod" finished-at="2024-02-22T14:28:44 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@11c9af63]" started-at="2024-02-25T22:11:33 IST" name="afterMethod" finished-at="2024-02-25T22:11:33 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyHomePageTitle status=SUCCESS method=VerifyHomeScreen.verifyHomePageTitle()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@19d481b] output={null}]]]>
+                <![CDATA[[TestResult name=verifyHomePageTitle status=SUCCESS method=VerifyHomeScreen.verifyHomePageTitle()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@11c9af63] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@19d481b]" started-at="2024-02-22T14:28:44 IST" name="beforeMethod" finished-at="2024-02-22T14:28:44 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=VerifyHomeScreen.verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.homepage.VerifyHomeScreen@19d481b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.homepage.VerifyHomeScreen@19d481b]" started-at="2024-02-22T14:28:44 IST" name="verifySignInBtnIsVisible" finished-at="2024-02-22T14:28:44 IST" duration-ms="136" status="PASS">
+        <test-method signature="verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.homepage.VerifyHomeScreen@11c9af63]" started-at="2024-02-25T22:11:33 IST" name="verifySignInBtnIsVisible" finished-at="2024-02-25T22:11:33 IST" duration-ms="46" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySignInBtnIsVisible -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@19d481b]" started-at="2024-02-22T14:28:44 IST" name="afterMethod" finished-at="2024-02-22T14:28:44 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@11c9af63]" started-at="2024-02-25T22:11:33 IST" name="beforeMethod" finished-at="2024-02-25T22:11:33 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifySignInBtnIsVisible status=SUCCESS method=VerifyHomeScreen.verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.homepage.VerifyHomeScreen@19d481b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@19d481b]" started-at="2024-02-22T14:28:44 IST" name="beforeMethod" finished-at="2024-02-22T14:28:44 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=VerifyHomeScreen.verifyMainMenuOptions()[pri:2, instance:com.myframework.testcases.homepage.VerifyHomeScreen@19d481b] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=VerifyHomeScreen.verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.homepage.VerifyHomeScreen@11c9af63] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyMainMenuOptions()[pri:2, instance:com.myframework.testcases.homepage.VerifyHomeScreen@19d481b]" started-at="2024-02-22T14:28:44 IST" name="verifyMainMenuOptions" finished-at="2024-02-22T14:28:44 IST" duration-ms="169" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMainMenuOptions -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@19d481b]" started-at="2024-02-22T14:28:44 IST" name="afterMethod" finished-at="2024-02-22T14:28:44 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@11c9af63]" started-at="2024-02-25T22:11:33 IST" name="afterMethod" finished-at="2024-02-25T22:11:33 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyMainMenuOptions status=SUCCESS method=VerifyHomeScreen.verifyMainMenuOptions()[pri:2, instance:com.myframework.testcases.homepage.VerifyHomeScreen@19d481b] output={null}]]]>
+                <![CDATA[[TestResult name=verifySignInBtnIsVisible status=SUCCESS method=VerifyHomeScreen.verifySignInBtnIsVisible()[pri:1, instance:com.myframework.testcases.homepage.VerifyHomeScreen@11c9af63] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@19d481b]" started-at="2024-02-22T14:28:44 IST" name="afterClass" finished-at="2024-02-22T14:28:48 IST" duration-ms="4186" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@11c9af63]" started-at="2024-02-25T22:11:33 IST" name="beforeMethod" finished-at="2024-02-25T22:11:33 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name={null} status=CREATED method=VerifyHomeScreen.verifyMainMenuOptions()[pri:2, instance:com.myframework.testcases.homepage.VerifyHomeScreen@11c9af63] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyMainMenuOptions()[pri:2, instance:com.myframework.testcases.homepage.VerifyHomeScreen@11c9af63]" started-at="2024-02-25T22:11:33 IST" name="verifyMainMenuOptions" finished-at="2024-02-25T22:11:33 IST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMainMenuOptions -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@11c9af63]" started-at="2024-02-25T22:11:33 IST" name="afterMethod" finished-at="2024-02-25T22:11:33 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyMainMenuOptions status=SUCCESS method=VerifyHomeScreen.verifyMainMenuOptions()[pri:2, instance:com.myframework.testcases.homepage.VerifyHomeScreen@11c9af63] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@11c9af63]" started-at="2024-02-25T22:11:33 IST" name="afterClass" finished-at="2024-02-25T22:11:33 IST" duration-ms="280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterSuit()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@19d481b]" started-at="2024-02-22T14:29:05 IST" name="afterSuit" finished-at="2024-02-22T14:29:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterSuit()[pri:0, instance:com.myframework.testcases.homepage.VerifyHomeScreen@11c9af63]" started-at="2024-02-25T22:11:33 IST" name="afterSuit" finished-at="2024-02-25T22:11:33 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuit -->
       </class> <!-- com.myframework.testcases.homepage.VerifyHomeScreen -->
-    </test> <!-- Firefox-Test -->
+    </test> <!-- Chrome-Test -->
   </suite> <!-- All Test Suite -->
 </testng-results>

@@ -1,0 +1,14 @@
+2024-02-25 22:11:26,334 INFO c.m.u.Log [main] Test Suit Execution Started
+2024-02-25 22:11:26,339 INFO c.m.u.Log [main] BaseClass - loadProperties() initiated
+2024-02-25 22:11:26,390 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] beforeClass Started on Browser -chrome
+2024-02-25 22:11:26,391 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] BaseClass - setupDriver() initiated
+2024-02-25 22:11:29,354 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] DriverManager - setDriver() - Chrome driver is setup
+2024-02-25 22:11:29,354 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] BaseClass - launchWebsite() initiated
+2024-02-25 22:11:33,337 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyHomePageTitle
+2024-02-25 22:11:33,365 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyHomePageTitle
+2024-02-25 22:11:33,366 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifySignInBtnIsVisible
+2024-02-25 22:11:33,413 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifySignInBtnIsVisible
+2024-02-25 22:11:33,413 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyMainMenuOptions
+2024-02-25 22:11:33,477 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] com.myframework.testcases.homepage.VerifyHomeScreen Test cases Started - verifyMainMenuOptions
+2024-02-25 22:11:33,758 INFO c.m.u.Log [TestNG-test=Chrome-Test-1] DriverManager - unload() - Driver has been unload
+2024-02-25 22:11:33,825 INFO c.m.u.Log [main] Test Suit Execution Ended
